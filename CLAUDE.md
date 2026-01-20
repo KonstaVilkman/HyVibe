@@ -6,41 +6,54 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 **HyVibe** is a Hytale social/hangout server project - a cozy MMO-lite where players can relax, roleplay, customize their space, and build meaningful connections.
 
-**Current Phase:** Phase 0 - Pre-Development/Planning
+**Current Phase:** Phase 0 - Foundation (Design Complete, Learning Hytale)
 **Core Promise:** A trusted, non-pay-to-win social platform
 
-This repository currently contains game design documentation only. No code or assets exist yet.
+This repository contains complete game design documentation. No code or assets exist yet.
+
+## Economy Model
+
+**Dual Currency + Lootboxes:**
+
+| Currency | Role | Tradeable? |
+|----------|------|------------|
+| **Cash ($)** | Common currency for everyday purchases | Yes |
+| **Gems** | Premium currency for lootboxes | No |
+| **Lootboxes** | Primary reward vehicle (cosmetics, furniture, pets) | No |
+
+**Key Design Decision:** Housing and job unlocks use Cash only. No premium currency gates.
 
 ## Documentation Structure
 
 | Document | Purpose |
 |----------|---------|
-| [VISION_DOCUMENT.md](VISION_DOCUMENT.md) | Overall vision, target audience, core pillars, monetization, development phases |
-| [Core_Systems_Overview.md](Core_Systems_Overview.md) | High-level view of how all systems connect (the core loop) |
-| [Economy_System.md](Economy_System.md) | Currency design, earning/spending flow, trading |
-| [Fame_System.md](Fame_System.md) | Social status mechanics, decay system, tier benefits |
-| [Jobs_System.md](Jobs_System.md) | Task-based careers, progression, rewards |
-| [Housing_System.md](Housing_System.md) | Instanced apartments, furniture, party hosting |
-| [Progression_System.md](Progression_System.md) | XP, player levels, milestones, achievements |
+| [VISION_DOCUMENT.md](VISION_DOCUMENT.md) | Overall vision, target audience, core pillars, monetization |
+| [Development_Path.md](Development_Path.md) | Roadmap from current state to launch |
+| [Core_Systems_Overview.md](Core_Systems_Overview.md) | How all systems connect (the core loop) |
+| [Economy_System.md](Economy_System.md) | Cash, Gems, Lootboxes, trading |
+| [Fame_System.md](Fame_System.md) | Social status with gentle decay |
+| [Jobs_System.md](Jobs_System.md) | Task-based careers, minigames |
+| [Housing_System.md](Housing_System.md) | Instanced apartments, furniture, parties |
+| [Progression_System.md](Progression_System.md) | XP, levels 1-100, milestones |
 
-## Key Terminology
+## Key Numbers (Quick Reference)
 
-| Term | Definition |
-|------|------------|
-| **Cash ($)** | Common currency, fast to earn, tradeable between players |
-| **Orbs** | Premium currency, earned through achievements/milestones, NOT tradeable |
-| **Anchor [TBD]** | Stable-value item for trading and premium sinks (name pending) |
-| **Event Tickets** | Time-limited currency for seasonal events |
-| **Fame** | Social status score with daily decay threshold - must earn minimum daily to maintain |
-| **Party** | Hosted events in apartments that generate Fame and passive income |
-| **The Core Loop** | PLAY → EARN → SPEND → FLEX → ASPIRE → PLAY |
+| Metric | Value |
+|--------|-------|
+| Level Cap | 100 |
+| Housing Tiers | 5 (Studio → Mansion) |
+| Fame Tiers | 8 (Newcomer → Legend) |
+| Lootbox Tiers | 4 (Common → Legendary) |
+| Passive XP | 10 XP/min |
+| Daily Login Fame | +10 |
+| Cash/Hour Target | $800-1,200 |
 
 ## Development Phases
 
-- **Phase 0 (Current):** Establish vision, learn Hytale tools, create proof-of-concept
-- **Phase 1:** Core loop - Hub, housing, one minigame, AFK rewards, basic economy
-- **Phase 2:** Expansion - More minigames, roleplay systems, events, monetization
-- **Phase 3:** Polish - Onboarding, moderation, community features, launch prep
+- **Phase 0 (Current):** Design complete, learning Hytale tools, building community
+- **Phase 1:** Core loop - Hub, housing, one job, one minigame, basic economy
+- **Phase 2:** Expansion - Full jobs, minigames, housing tiers, fame, lootboxes
+- **Phase 3:** Polish - Onboarding, moderation, achievements, launch prep
 - **Phase 4:** Live Operations - Content updates, events, growth
 
 ## Working with This Project
@@ -50,21 +63,28 @@ This repository currently contains game design documentation only. No code or as
 - Maintain consistency across all interconnected systems
 - When adjusting numbers, consider ripple effects on other systems
 - All design choices must respect the non-pay-to-win principle
-- Mark open questions in documents for future playtesting decisions
+- Reference specific documents for detailed numbers
+
+### Balance Principles
+- Cash is easy to earn, used for housing and basics
+- Gems are slower to earn, used for lootboxes
+- Lootboxes are the excitement mechanic
+- Fame decay is gentle (2-day grace period)
+- All content achievable through gameplay
 
 ### Learning Path (Phase 0 Priorities)
-1. Learn Hytale building tools and create small test builds
-2. Research Hytale scripting/modding capabilities as they become available
-3. Experiment with Hytale Model Maker for custom assets
-4. Identify which designed systems are feasible with current Hytale features
+1. Learn Hytale building tools
+2. Build proof-of-concept (small plaza)
+3. Research scripting capabilities
+4. Start Discord community
+5. Find team members (builders, scripters)
 
 ### Team Collaboration
 Key roles needed (per VISION_DOCUMENT.md):
 - **Builder(s):** World building, environmental design (High priority)
 - **Scripter/Developer:** Modding, game logic, systems (High priority)
 - **3D Modeler:** Custom furniture, items, cosmetics (Medium priority)
-- **Pixel/2D Artist:** UI, icons, branding (Medium priority)
-- **Community Manager:** Discord, social media (Medium priority)
+- **2D Artist:** UI, icons, branding (Medium priority)
 
 ## Design Constraints
 
@@ -72,3 +92,4 @@ Key roles needed (per VISION_DOCUMENT.md):
 - All monetization must be cosmetic-only (no gameplay advantages)
 - Systems should feel rewarding without pressure (cozy, not grindy)
 - Target audience: 13+, family-friendly content
+- All items must be earnable through gameplay (no purchase-exclusives)

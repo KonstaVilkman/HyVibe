@@ -1,7 +1,8 @@
 # Progression System
 
-**Purpose:** Long-term goals that keep players engaged and create aspiration.  
+**Purpose:** Long-term goals that keep players engaged and create aspiration.
 **Status:** Concept Phase
+**Last Updated:** January 2026
 
 ---
 
@@ -13,7 +14,8 @@ Progression is about **giving players reasons to keep playing**. Every action sh
 - Multiple progression tracks (not just one number)
 - Always something to work toward
 - Visible progress creates satisfaction
-- Milestones unlock meaningful rewards
+- Milestones unlock meaningful rewards + Lootboxes
+- Realistic timelines based on actual play
 
 ---
 
@@ -25,7 +27,7 @@ Progression is about **giving players reasons to keep playing**. Every action sh
 | **Fame** | Social status/activity | Hosting bonuses, titles |
 | **Job Levels** | Career progression | Better pay, skilled tiers |
 | **Collections** | Items gathered | Completion bonuses |
-| **Achievements** | Milestones completed | Orbs, cosmetics |
+| **Achievements** | Milestones completed | Gems, Lootboxes, cosmetics |
 
 ---
 
@@ -35,133 +37,119 @@ Progression is about **giving players reasons to keep playing**. Every action sh
 
 | Source | XP Amount | Notes |
 |--------|-----------|-------|
-| Time online (passive) | +5 XP/min | Always earning while online |
-| Job task | +10-20 XP | Active work |
-| Minigame played | +15-30 XP | Participation |
-| Minigame won | +25-50 XP | Skill reward |
-| Daily login | +100 XP | Show up bonus |
-| Achievement unlocked | +50-500 XP | One-time spikes |
-| Event participation | +30-100 XP | Engagement reward |
+| Time online (passive) | +10 XP/min | Always earning while online |
+| Job task (Entry) | +15 XP | Active work |
+| Job task (Skilled) | +25 XP | Better jobs = more XP |
+| Minigame played | +20-40 XP | Participation |
+| Minigame won | +50-80 XP | Skill reward |
+| Daily login | +200 XP | Show up bonus |
+| Achievement unlocked | +100-500 XP | One-time spikes |
+| Event participation | +50-200 XP | Engagement reward |
 
-**Passive XP:** All players earn 5 XP per minute just for being online. No restrictionsâ€”whether you're active, idle, or AFK, you're progressing. This ensures you're always working toward the next level.
+**Passive XP:** All players earn 10 XP per minute just for being online. This ensures you're always working toward the next level whether active, idle, or AFK.
 
 ### XP Curve
 
-| Level Range | Total XP to Reach | XP Per Level (Avg) |
-|-------------|-------------------|---------------------|
-| 1-10 | 0-5,000 | ~500 |
-| 11-50 | 5,000-65,000 | ~1,500 |
-| 51-100 | 65,000-215,000 | ~3,000 |
-| 101-200 | 215,000-715,000 | ~5,000 |
-| 201-300 | 715,000-1,515,000 | ~8,000 |
-| 301-400 | 1,515,000-2,715,000 | ~12,000 |
-| 401-500 | 2,715,000-4,215,000 | ~15,000 |
-
-**Design Intent:**
-- Early levels (1-50): Fast, rewardingâ€”players see progress quickly
-- Mid levels (51-200): Steady climbâ€”commitment shows results
-- Late levels (201-500): True dedicationâ€”these are the veterans
-
-**Why 500?** Big enough to feel impressive, small enough to stay comprehensible. No one wants to explain they're "level 47,382."
+| Level Range | XP Per Level | Total XP to Reach End |
+|-------------|--------------|----------------------|
+| 1-10 | 500 | 5,000 |
+| 11-25 | 750 | 16,250 |
+| 26-40 | 1,000 | 31,250 |
+| 41-60 | 1,500 | 61,250 |
+| 61-80 | 2,000 | 101,250 |
+| 81-100 | 2,500 | 151,250 |
 
 ### Level Time Estimates
 
-Based on 5 XP/min idle + active play bonuses (avg ~500-800 XP/hour):
+Based on 10 XP/min idle + active play bonuses (avg ~800-1,200 XP/hour):
 
 | Level | Approx. Time | Playstyle |
 |-------|--------------|-----------|
-| 10 | 5-10 hours | New player milestone |
-| 50 | 80-120 hours | Committed player |
-| 100 | 250-400 hours | Regular player |
-| 200 | 800-1,200 hours | Dedicated player |
-| 300 | 1,800-2,400 hours | Veteran |
-| 400 | 3,000-4,000 hours | Elite |
-| 500 | 4,500-6,000 hours | Legend |
+| 10 | 4-6 hours | New player milestone |
+| 25 | 15-20 hours | First week player |
+| 40 | 30-40 hours | Regular player |
+| 60 | 60-80 hours | Committed player |
+| 80 | 100-130 hours | Dedicated player |
+| 100 | 150-200 hours | Veteran |
 
-**Reality Check:** These are total playtime hours, spread over months or years. A player logging 2 hours/day reaches level 100 in 4-7 months, level 500 in 6-8 yearsâ€”perfect for long-term MMO engagement.
+**Reality Check:** A player logging 2 hours/day reaches Level 40 in 2-3 weeks, Level 100 in 3-4 months. Achievable for casual players.
 
 ---
 
 ## Level Unlocks
 
-### Early Game (1-50)
+### Early Game (1-25)
+
 | Level | Unlock |
 |-------|--------|
 | 1 | Tutorial complete, starter apartment |
-| 5 | First job efficiency bonus |
-| 10 | Apartment Tier 2 available, first cosmetic set |
-| 15 | More minigames unlocked |
-| 20 | Loft Tier 3 available, title customization |
-| 25 | VIP area access option |
-| 30 | Advanced crafting recipes |
-| 35 | Penthouse Tier 4 available |
-| 40 | Prestige cosmetics |
-| 45 | Legacy items unlocked |
-| 50 | Mansion Tier 5 available, "Veteran" badge |
+| 5 | First job efficiency bonus, minigames unlocked |
+| 10 | Apartment Tier 2 available ($3,000), first cosmetic set |
+| 15 | All minigames unlocked, title customization |
+| 20 | First achievement tier complete bonus |
+| 25 | Loft Tier 3 available ($10,000), VIP area access option |
 
-### Mid Game (51-200)
+### Mid Game (26-60)
+
 | Level | Unlock |
 |-------|--------|
-| 75 | Elite cosmetic tier, exclusive emotes |
-| 100 | "Centurion" title, special particles |
-| 125 | Master-tier furniture unlocked |
-| 150 | "Dedicated" badge, premium housing options |
-| 175 | Legendary cosmetic access |
-| 200 | "Champion" title, monument option |
+| 30 | Advanced crafting recipes, exclusive emotes |
+| 35 | Elite cosmetic tier access |
+| 40 | Penthouse Tier 4 available ($30,000), "Veteran" badge |
+| 45 | Prestige cosmetics, special particles |
+| 50 | "Dedicated" badge, premium housing options |
+| 55 | Master-tier furniture unlocked |
+| 60 | Mansion Tier 5 available ($75,000), "Champion" title |
 
-### Late Game (201-400)
+### Late Game (61-100)
+
 | Level | Unlock |
 |-------|--------|
-| 250 | "Elite" title, exclusive district access |
-| 300 | "Master" title, unique visual effects |
-| 350 | "Grandmaster" title, prestige housing |
-| 400 | "Legend" title, permanent city recognition |
-
-### End Game (401-500)
-| Level | Unlock |
-|-------|--------|
-| 450 | "Mythic" title, ultimate cosmetics |
-| 500 | "Immortal" title, personal monument, exclusive 500 club |
-
-**Note:** Every 10 levels unlocks guaranteed milestone rewards (see next section).
+| 70 | "Elite" title, exclusive district access |
+| 80 | "Master" title, unique visual effects |
+| 90 | "Grandmaster" title, prestige housing |
+| 100 | "Legend" title, personal monument, exclusive 100 club |
 
 ---
 
 ## Milestone Rewards
 
-**Every 10 levels = Milestone with guaranteed rewards**
+**Every 5 levels = Milestone with guaranteed rewards**
 
-### Early Milestones (10-50)
-| Level | Cash | Orbs | Anchor | Special |
-|-------|------|------|--------|---------|
-| 10 | 500 | 15 | 3 | Cosmetic |
-| 20 | 1,000 | 25 | 5 | Cosmetic Set |
-| 30 | 1,500 | 35 | 8 | Title Option |
-| 40 | 2,000 | 50 | 12 | Rare Cosmetic |
-| 50 | 3,000 | 75 | 20 | Veteran Badge |
+### Levels 5-25
 
-### Mid Milestones (60-200)
-| Level | Cash | Orbs | Anchor | Special |
-|-------|------|------|--------|---------|
-| 100 | 10,000 | 150 | 50 | Centurion Title |
-| 150 | 20,000 | 250 | 100 | Elite Cosmetic |
-| 200 | 40,000 | 400 | 200 | Champion Badge |
+| Level | Cash | Gems | Lootbox | Special |
+|-------|------|------|---------|---------|
+| 5 | $300 | 10 | Common | — |
+| 10 | $500 | 20 | Common | Cosmetic |
+| 15 | $750 | 30 | Common | — |
+| 20 | $1,000 | 40 | Rare | Title Option |
+| 25 | $1,500 | 50 | Rare | Badge |
 
-### Late Milestones (250-400)
-| Level | Cash | Orbs | Anchor | Special |
-|-------|------|------|--------|---------|
-| 250 | 60,000 | 600 | 300 | Elite Title |
-| 300 | 100,000 | 1,000 | 500 | Master Title + Unique Effect |
-| 350 | 150,000 | 1,500 | 750 | Grandmaster Title |
-| 400 | 250,000 | 2,500 | 1,200 | Legend Title |
+### Levels 30-60
 
-### Ultimate Milestones (450-500)
-| Level | Cash | Orbs | Anchor | Special |
-|-------|------|------|--------|---------|
-| 450 | 400,000 | 4,000 | 2,000 | Mythic Title |
-| 500 | 1,000,000 | 10,000 | 5,000 | Immortal Title + Monument |
+| Level | Cash | Gems | Lootbox | Special |
+|-------|------|------|---------|---------|
+| 30 | $2,000 | 60 | Rare | — |
+| 35 | $2,500 | 75 | Rare | Cosmetic Set |
+| 40 | $3,500 | 100 | Epic | Veteran Badge |
+| 45 | $4,500 | 125 | Epic | — |
+| 50 | $6,000 | 150 | Epic | Dedicated Badge |
+| 55 | $7,500 | 175 | Epic | — |
+| 60 | $10,000 | 200 | Legendary | Champion Title |
 
-**Scaling Logic:** Rewards grow with level ranges. Late-game players have high currency income, so rewards match their economy.
+### Levels 65-100
+
+| Level | Cash | Gems | Lootbox | Special |
+|-------|------|------|---------|---------|
+| 65 | $12,000 | 225 | Epic | — |
+| 70 | $15,000 | 250 | Legendary | Elite Title |
+| 75 | $18,000 | 275 | Epic | — |
+| 80 | $22,000 | 300 | Legendary | Master Title + Effect |
+| 85 | $26,000 | 350 | Epic | — |
+| 90 | $30,000 | 400 | Legendary | Grandmaster Title |
+| 95 | $35,000 | 450 | Legendary | — |
+| 100 | $50,000 | 600 | 2x Legendary | Legend Title + Monument |
 
 ---
 
@@ -169,17 +157,17 @@ Based on 5 XP/min idle + active play bonuses (avg ~500-800 XP/hour):
 
 ### Base Passive XP
 
-**Everyone earns 5 XP/min while online. No strings attached.**
+**Everyone earns 10 XP/min while online. No strings attached.**
 
-- Active playing? +5 XP/min
-- Standing still? +5 XP/min  
-- AFK in your apartment? +5 XP/min
+- Active playing? +10 XP/min
+- Standing still? +10 XP/min
+- AFK in your apartment? +10 XP/min
 
 **Philosophy:** Your time matters. Whether you're grinding or chatting with friends, you're progressing.
 
 ### Bonus Multipliers (From Gear/Items)
 
-Players can boost their **overall** XP gain through equipment and cosmetics:
+Players can boost their XP gain through equipment:
 
 | Item Type | Max Bonus | Stacking |
 |-----------|-----------|----------|
@@ -189,46 +177,26 @@ Players can boost their **overall** XP gain through equipment and cosmetics:
 | **Total Cap** | **+20% XP** | Cannot exceed |
 
 **Example:**
-- Base: 5 XP/min = 300 XP/hour
-- With +20% gear: 6 XP/min = 360 XP/hour
+- Base: 10 XP/min = 600 XP/hour
+- With +20% gear: 12 XP/min = 720 XP/hour
 - Doing jobs/minigames on top? Even faster
 
-**No Power Creep:** These percentages are LOCKED. Future items have the same caps, just different aesthetics. A level 500 player and a level 50 player with the same gear get the same % bonus.
+**No Power Creep:** These percentages are LOCKED. Future items have the same caps, just different aesthetics.
 
 ---
 
-## Build System (Stat Focus)
+## AFK Zones
 
-### The Concept
+**Designated chill spots with bonus idle rewards:**
 
-Players can't max everything. They choose a focus.
+| Zone | Bonus | Requirements |
+|------|-------|--------------|
+| Park Benches | +2 XP/min | None |
+| Rooftop Lounge | +3 XP/min | Level 20+ |
+| VIP Lounge | +5 XP/min | Fame: Celebrity+ |
+| Zen Garden | +3 XP/min + $5/min Cash | Level 30+ |
 
-| Build Type | Focus | Good At | Trades Off |
-|------------|-------|---------|------------|
-| **Grinder** | +XP bonuses | Leveling fast | Less Fame/Cash |
-| **Hustler** | +Cash bonuses | Making money | Less XP/Fame |
-| **Social** | +Fame bonuses | Status/hosting | Less XP/Cash |
-| **Balanced** | Mixed | Decent at all | Master of none |
-
-### How Builds Work
-
-Items have stat bonuses, but you can only have ONE active set:
-
-```
-Example: Grinder Build
-- Cozy Pajamas: +10% idle XP
-- Study Pet: +5% XP from minigames
-- Focus Lamp (furniture): +5% XP while home
-= Total: +20% XP (at cap)
-
-Example: Hustler Build  
-- Business Suit: +10% Cash from jobs
-- Money Cat Pet: +5% Cash from activities
-- Lucky Coin (accessory): +5% Cash from minigames
-= Total: +20% Cash (at cap)
-```
-
-**Switching:** Players can change builds anytime by switching gear.
+**Note:** AFK zone bonuses stack with gear bonuses. A max-geared player in VIP Lounge earns 15+3 XP/min = 18 XP/min (1,080/hour) while AFK.
 
 ---
 
@@ -238,22 +206,22 @@ Example: Hustler Build
 
 | Category | Examples |
 |----------|----------|
-| **Progression** | Reach Level 10, 20, 30... |
+| **Progression** | Reach Level 10, 25, 50, 100 |
 | **Jobs** | Complete 100 deliveries, Max out a career |
 | **Social** | Host 10 parties, Get 100 apartment visits |
 | **Collection** | Own 50 furniture items, Complete a set |
 | **Exploration** | Visit all districts, Find hidden spots |
 | **Events** | Participate in 5 events, Complete event challenges |
-| **Wealth** | Earn 10,000 Cash total, Own 100 [ANCHOR] |
+| **Wealth** | Earn $10,000 total, Reach $50,000 balance |
 
 ### Achievement Rewards
 
-| Achievement Tier | Reward |
-|------------------|--------|
-| Bronze | 5 Orbs |
-| Silver | 15 Orbs + 1 [ANCHOR] |
-| Gold | 30 Orbs + 3 [ANCHOR] + Cosmetic |
-| Platinum | 50 Orbs + 5 [ANCHOR] + Title |
+| Achievement Tier | Gems | Lootbox | Fame | Special |
+|------------------|------|---------|------|---------|
+| Bronze | 10 | Common | +10 | — |
+| Silver | 25 | Common | +25 | — |
+| Gold | 50 | Rare | +50 | Cosmetic |
+| Platinum | 100 | Epic | +100 | Title |
 
 ### Hidden Achievements
 
@@ -262,7 +230,7 @@ Example: Hustler Build
 - Do unusual things
 - Community-discovered secrets
 
-Reward: Unique cosmetics, bragging rights
+Reward: Unique cosmetics, Epic Lootbox, bragging rights
 
 ---
 
@@ -274,19 +242,19 @@ Reward: Unique cosmetics, bragging rights
 
 | Collection | Items | Completion Reward |
 |------------|-------|-------------------|
-| Fish | All fish species | Aquarium furniture, title |
-| Furniture Sets | Complete themed sets | Set bonus effect |
-| Pets | Own X different pets | Pet paradise decoration |
-| Outfits | Own X different outfits | Wardrobe furniture |
-| Event Items | All items from an event | Event badge |
+| Fish | All fish species (25) | Aquarium furniture, title, Epic Lootbox |
+| Furniture Sets | Complete themed sets | Set bonus effect + Rare Lootbox |
+| Pets | Own 10 different pets | Pet paradise decoration |
+| Outfits | Own 25 different outfits | Wardrobe furniture + 100 Gems |
+| Event Items | All items from an event | Event badge + Legendary Lootbox |
 
 ### Collection Progress
 
 ```
 Fish Collection: 12/25 Complete
-[Ã¢â€“Â Ã¢â€“Â Ã¢â€“Â Ã¢â€“Â Ã¢â€“Â Ã¢â€“Â Ã¢â€“Â Ã¢â€“Â Ã¢â€“Â Ã¢â€“Â Ã¢â€“Â Ã¢â€“Â Ã¢â€“Â¡Ã¢â€“Â¡Ã¢â€“Â¡Ã¢â€“Â¡Ã¢â€“Â¡Ã¢â€“Â¡Ã¢â€“Â¡Ã¢â€“Â¡Ã¢â€“Â¡Ã¢â€“Â¡Ã¢â€“Â¡Ã¢â€“Â¡Ã¢â€“Â¡] 48%
+[████████████░░░░░░░░░░░░░] 48%
 
-Reward at 100%: Golden Aquarium + "Master Angler" title
+Reward at 100%: Golden Aquarium + "Master Angler" title + Epic Lootbox
 ```
 
 ---
@@ -297,12 +265,12 @@ Reward at 100%: Golden Aquarium + "Master Angler" title
 
 | Example Challenge | Reward |
 |-------------------|--------|
-| Complete 5 job tasks | 50 Cash, 10 XP |
-| Win 2 minigames | 75 Cash, 15 XP |
-| Visit 3 apartments | 25 Cash, 5 Fame |
-| Fish for 10 minutes | 50 Cash, 1 [ANCHOR] |
+| Complete 5 job tasks | $75, 5 Gems |
+| Win 2 minigames | $100, 10 Gems |
+| Visit 3 apartments | $50, 5 Fame |
+| Fish for 10 minutes | $75, 5 Gems |
 
-**Daily Completion Bonus:** Finish all 3 = +50 Orbs
+**Daily Completion Bonus:** Finish all 3 = 1 Common Lootbox
 
 ### Weekly Challenges (5 per week)
 
@@ -310,12 +278,13 @@ Larger goals with better rewards:
 
 | Example Challenge | Reward |
 |-------------------|--------|
-| Earn 5,000 Cash | 500 Cash, 30 Orbs |
-| Host a party with 10+ guests | 3 [ANCHOR], 50 Fame |
+| Earn $5,000 Cash | $500, 25 Gems |
+| Host a party with 10+ guests | 50 Fame, Rare Lootbox |
 | Reach Job Level 5 in any career | Cosmetic unlock |
-| Like 20 apartments | 100 Cash, 20 Fame |
+| Like 20 apartments | $200, 20 Fame |
+| Open 5 Lootboxes | 1 Rare Lootbox |
 
-**Weekly Completion Bonus:** Finish all 5 = Exclusive weekly cosmetic
+**Weekly Completion Bonus:** Finish all 5 = 1 Epic Lootbox + 50 Gems
 
 ---
 
@@ -325,23 +294,29 @@ Larger goals with better rewards:
 
 | Tier | Reward |
 |------|--------|
-| 1 | 50 Cash |
-| 5 | Common Cosmetic |
-| 10 | 100 Cash, 5 Orbs |
+| 1 | $100 |
+| 5 | Common Lootbox |
+| 10 | $200, 10 Gems |
 | 15 | Uncommon Furniture |
-| ... | ... |
-| 50 | Season Badge |
+| 20 | Rare Lootbox |
+| 25 | $500, 25 Gems |
+| 30 | Cosmetic |
+| 40 | Epic Lootbox |
+| 50 | Season Badge, $1,000 |
 
-### Premium Track ($5-10)
+### Premium Track ($9.99)
 
 | Tier | Reward |
 |------|--------|
-| 1 | 100 Cash |
-| 5 | Rare Cosmetic |
-| 10 | 200 Cash, 15 Orbs, 2 [ANCHOR] |
+| 1 | $200, Exclusive Outfit |
+| 5 | Rare Lootbox |
+| 10 | $400, 25 Gems |
 | 15 | Rare Furniture |
-| ... | ... |
-| 50 | Season Exclusive Set |
+| 20 | Epic Lootbox |
+| 25 | $750, 50 Gems |
+| 30 | Rare Cosmetic Set |
+| 40 | Legendary Lootbox |
+| 50 | Season Exclusive Set, 100 Gems |
 
 ---
 
@@ -349,13 +324,13 @@ Larger goals with better rewards:
 
 | "Why should I...?" | Incentive |
 |--------------------|-----------|
-| Keep playing? | Level unlocks, daily rewards, collections |
+| Keep playing? | Level unlocks, daily rewards, Lootboxes |
 | Do jobs? | Cash, XP, job levels, cosmetics |
 | Host parties? | Fame, passive income, status |
 | Decorate apartment? | Apartment value, visitors, flex |
-| Participate in events? | Exclusive items, event currency |
+| Participate in events? | Exclusive items, event Lootboxes |
 | Trade? | Get items you want, make profit |
-| Reach high level? | Prestige, unlocks, milestone rewards |
+| Reach high level? | Prestige, unlocks, massive milestone rewards |
 
 ---
 
@@ -370,6 +345,7 @@ Larger goals with better rewards:
 | Multiple tracks | Stuck on one? Progress on another |
 | Catch-up mechanics | Events help newer players |
 | No mandatory grind | All content eventually accessible |
+| Lootboxes at milestones | Every milestone feels exciting |
 
 ---
 
@@ -377,34 +353,15 @@ Larger goals with better rewards:
 
 | Question | Considerations |
 |----------|----------------|
-| Exact XP numbers fine-tuning | Needs playtesting for feel |
-| Post-500 progression? | Prestige system? Infinite scaling? Cap at 500? |
-| Season pass inclusion | At launch or later feature? |
-| Milestone reward balance | Are late-game rewards exciting enough? |
-| XP bonus sources | Should events/special items offer temporary XP boosts? |
+| Exact XP numbers | Needs playtesting for feel |
+| Post-100 progression? | Prestige system? Extended levels? |
+| Season pass at launch? | Later feature? |
+| Milestone reward balance | Exciting enough at all stages? |
+| AFK zone variety | More zones with different bonuses? |
 
 ---
 
-## Design Philosophy: Why Level 500?
-
-**The Sweet Spot:**
-- **Big enough:** Hitting level 300, 400, 500 feels like a huge achievement
-- **Comprehensible:** You can grasp the scale without scientific notation
-- **Long-term:** Years of progression without hitting arbitrary caps
-- **Status:** High levels are immediately impressive to other players
-
-**Contrast:**
-- Too low (Level 100 cap): Feels limiting, veterans max out fast
-- Too high (Level 10,000+): Numbers lose meaning, "I'm level 8,473" â‰  flex
-
-**The Target:**
-- Casual players: Level 50-150 over months
-- Regular players: Level 200-350 over a year+
-- Dedicated players: Level 400-500 over years
-- The level 500s: Legends of the server
-
----
-
-*See FAME_SYSTEM.md for Fame progression.*  
-*See JOBS_SYSTEM.md for career progression.*  
+*See FAME_SYSTEM.md for Fame progression.*
+*See JOBS_SYSTEM.md for career progression.*
 *See HOUSING_SYSTEM.md for apartment progression.*
+*See ECONOMY_SYSTEM.md for Lootbox system details.*

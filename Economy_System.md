@@ -1,7 +1,8 @@
 # Economy System
 
-**Purpose:** Resource flow that drives player goals and maintains balance.  
+**Purpose:** Resource flow that drives player goals and maintains balance.
 **Status:** Concept Phase
+**Last Updated:** January 2026
 
 ---
 
@@ -10,9 +11,9 @@
 | Currency | Role | Earn Rate | Tradeable? |
 |----------|------|-----------|------------|
 | **Cash ($)** | Common, daily use | Fast | Yes (player-to-player) |
-| **Orbs** | Premium, rare purchases | Slow | No (sacred) |
-| **Anchor [TBD]** | Stable-value trade item, sinks | Medium | Yes (this IS the trade currency) |
-| **Event Tickets** | Time-limited event items | Event-only | No |
+| **Gems** | Premium, lootboxes, exclusive items | Medium | No |
+
+**Design Philosophy:** Two currencies, one simple loop. Cash for everyday gameplay, Gems for exciting rewards.
 
 ---
 
@@ -25,211 +26,184 @@ Everyday currency. Easy to earn, easy to spend. Keeps players engaged with basic
 
 | Source | Amount | Frequency |
 |--------|--------|-----------|
-| Entry job task | $5-15 | Per task |
-| Skilled job task | $15-30 | Per task |
-| Minigame win | $20-50 | Per win |
-| Minigame participation | $5-10 | Per game |
-| Daily login | $50 | Daily |
-| Selling items to NPC | Varies | Anytime |
+| Entry job task | $10-15 | Per task |
+| Skilled job task | $25-40 | Per task |
+| Minigame win | $30-50 | Per win |
+| Minigame participation | $10-20 | Per game |
+| Daily login | $100 | Daily |
+| Weekly login streak (7 days) | $500 bonus | Weekly |
+| Selling items to NPC | 50% item value | Anytime |
 | Player trades | Varies | Anytime |
-| Hosting bonus (from Fame) | % of guest earnings | During parties |
+| Lootbox (common drop) | $50-200 | Random |
 
 ### Spending Cash
 
 | Sink | Cost Range | Notes |
 |------|------------|-------|
-| Basic cosmetics | $100-500 | Clothes, common items |
-| Basic furniture | $50-300 | Apartment decor |
-| Apartment rent/upgrade | $500-5,000 | Progression |
-| Food/drinks (emotes) | $10-50 | Social items |
-| Job tools | $100-500 | Efficiency upgrades |
+| Basic cosmetics | $200-1,000 | Common outfits, furniture |
+| Apartment upgrades | $2,000-50,000 | See Housing System |
+| Food/drinks (social items) | $20-100 | Emotes, consumables |
+| Job tools | $200-500 | Efficiency items |
+| Basic lootboxes | $500 | Common tier |
 | Trading with players | Varies | Player economy |
 
 ### Balance Goal
-Players should earn ~$500-1,000/hour of active play. Basic cosmetics accessible within first few hours.
+- **Target:** $800-1,200/hour of active play
+- **New player first hour:** ~$500 (enough for first cosmetic)
+- **Daily casual (1 hour):** ~$1,000
 
 ---
 
-## Orbs
+## Gems
 
 ### Purpose
-Premium currency that feels special. Marks significant achievements and unlocks exclusive items.
+Premium currency that makes earning feel exciting. Used for lootboxes and exclusive purchases.
 
-### Earning Orbs
+### Earning Gems
 
 | Source | Amount | Frequency |
 |--------|--------|-----------|
+| Level milestone (every 5 levels) | 10-30 | Progression |
 | Achievement unlocked | 5-50 | One-time |
-| Level milestone (every 5 levels) | 10-25 | Progression |
-| Rare drop from activities | 1-5 | Random, rare |
-| Event completion | 10-30 | Per event |
-| Daily login streak (7 days) | 10 | Weekly |
-| Featured apartment bonus | 25 | If selected |
+| Daily login | 5 | Daily |
+| Weekly login streak (7 days) | 25 bonus | Weekly |
+| Event participation | 10-50 | Per event |
+| Fame milestone (tier up) | 20-100 | Progression |
+| Lootbox (rare drop) | 10-50 | Random |
 
-### Spending Orbs
+### Spending Gems
 
-| Sink | Cost Range | Notes |
-|------|------------|-------|
-| Premium cosmetics | 50-200 | Exclusive looks |
-| Rare furniture | 30-150 | Statement pieces |
-| Exclusive pets | 100-300 | Companions |
-| Special effects/particles | 50-150 | Visual flair |
-| Premium apartment themes | 100-250 | Full room makeovers |
+| Sink | Cost | Notes |
+|------|------|-------|
+| Common Lootbox | 25 Gems | Basic rewards |
+| Rare Lootbox | 75 Gems | Better odds, exclusive items |
+| Epic Lootbox | 150 Gems | Premium items, guaranteed rare+ |
+| Legendary Lootbox | 300 Gems | Best odds, exclusive legendaries |
+| Direct purchase (exclusive items) | 50-500 | Rotating shop |
 
 ### Balance Goal
-Players earn ~50-100 Orbs/week through normal play. Premium items feel earned, not bought.
-
-### Why Not Tradeable
-- Maintains "earned" feeling
-- Prevents inflation through trading
-- Keeps Orbs special and personal
-- Anchor item handles trade economy
+- **Target:** 50-80 Gems/week through normal play
+- **Common Lootbox:** Affordable every 2-3 days
+- **Rare Lootbox:** Weekly reward for active players
+- **Epic/Legendary:** Monthly goals or event rewards
 
 ---
 
-## Anchor Item [NAME TBD]
+## Lootbox System
 
-### Purpose
-Stable-value item for player trading and premium sinks. The "World Lock" of this economy.
+### Philosophy
+Lootboxes are the **primary excitement mechanic**. Opening boxes should feel rewarding, surprising, and fair.
 
-### Naming Considerations
+**Key Principles:**
+- Always disclose odds (required by many platforms)
+- No duplicates of equipped items
+- Duplicate items convert to Cash (not lost)
+- Guaranteed minimum value per box
 
-The name should feel:
-- Unique to this world
-- Slightly mysterious
-- Worth collecting
-- Not generic (not "Keys" or "Tokens")
+### Lootbox Tiers
 
-**Candidates:**
+| Tier | Cost (Gems) | Cost (Cash) | Guaranteed |
+|------|-------------|-------------|------------|
+| **Common** | 25 | $500 | 1 item (Common+) |
+| **Rare** | 75 | — | 1 item (Uncommon+) |
+| **Epic** | 150 | — | 1 item (Rare+), 1 bonus |
+| **Legendary** | 300 | — | 1 item (Epic+), 2 bonus |
 
-| Name | Vibe | Fits Story? |
-|------|------|-------------|
-| **Echoes** | Remnants of the city's origin | âœ“ Mysterious |
-| **Sparks** | Energy that powers the city | âœ“ Modern-fantasy |
-| **Marks** | City's official seal of value | âœ“ Urban |
-| **Fragments** | Pieces of something greater | âœ“ Mysterious |
-| **Pulses** | Heartbeat of the city | âœ“ Modern |
-| **Glints** | Rare, shiny, valuable | âœ“ Collectible feel |
-| **Creds** | Street credibility made tangible | âœ“ Urban |
-| **Halos** | Circles of light/value | âœ“ Fantasy touch |
+### Drop Rates (Common Lootbox)
 
-**Decision needed.** Placeholder: `[ANCHOR]`
+| Rarity | Chance | Examples |
+|--------|--------|----------|
+| Common | 60% | Basic furniture, simple outfits |
+| Uncommon | 25% | Themed items, better cosmetics |
+| Rare | 12% | Statement pieces, pets |
+| Epic | 2.5% | Premium sets, rare particles |
+| Legendary | 0.5% | Ultra-rare, flex items |
 
-### Earning Anchor
+### Drop Rates (Rare Lootbox)
 
-| Source | Amount | Frequency |
-|--------|--------|-----------|
-| Job milestone (Level 5, 10) | 1-3 | Per milestone |
-| Level milestone (every 10 levels) | 2-5 | Progression |
-| Rare activity drops | 1 | Random, uncommon |
-| Event rewards | 2-5 | Per event |
-| Trading with players | Varies | Player economy |
-| Achievement tiers | 1-5 | One-time |
+| Rarity | Chance |
+|--------|--------|
+| Uncommon | 50% |
+| Rare | 35% |
+| Epic | 12% |
+| Legendary | 3% |
 
-### Spending Anchor (SINKS)
+### Drop Rates (Epic Lootbox)
 
-| Sink | Cost | Frequency | Notes |
-|------|------|-----------|-------|
-| **Party Hosting** | 1-5 | Often | Core sink for Fame |
-| **Crafting Recipes** | 1-10 | Sometimes | Rare item creation |
-| **VIP Area Access** | 1-2 | Often | Per entry or day pass |
-| **Shop Reroll** | 1 | Daily option | Refresh daily deals |
-| **Quest Reroll** | 1 | Daily option | Get new dailies |
-| **Exclusive Shop Items** | 5-20 | Sometimes | Rare cosmetics/furniture |
-| **Career Unlock** | 3-5 | Once per career | Entry â†’ Skilled |
+| Rarity | Chance |
+|--------|--------|
+| Rare | 55% |
+| Epic | 35% |
+| Legendary | 10% |
 
-### Why These Sinks Work
+### Drop Rates (Legendary Lootbox)
 
-| Sink | Why It Maintains Value |
-|------|------------------------|
-| Party Hosting | Recurring, scales with Fame ambition |
-| Crafting | Consumable, rare items desirable |
-| VIP Access | Recurring, rewards justify cost |
-| Rerolls | Small, frequent, adds up |
-| Exclusive Items | Desirable, limited |
-| Career Unlock | One-time but universal need |
+| Rarity | Chance |
+|--------|--------|
+| Epic | 60% |
+| Legendary | 40% |
 
-### Trade Hierarchy
+### Lootbox Contents
 
-Like World Locks â†’ Diamond Locks â†’ Blue Gem Locks:
+Lootboxes can contain:
+- **Cosmetics:** Outfits, furniture, pets, particles, emotes
+- **Currency:** Cash ($50-500), Gems (5-50)
+- **Materials:** Crafting components, rare resources
+- **Consumables:** Temporary boosts, social items
 
-```
-1 [ANCHOR] = Base unit
-10 [ANCHOR] = Silver [ANCHOR]
-100 [ANCHOR] = Gold [ANCHOR]
-1000 [ANCHOR] = Diamond [ANCHOR]
-```
+### Duplicate Protection
+- First duplicate: 100% item value as Cash
+- Repeated duplicates: 75% item value as Cash
+- Legendary duplicates: Full value + 10 Gems
 
-This allows large trades without counting hundreds of items.
+### Earning Lootboxes (Free)
 
----
-
-## Event Tickets
-
-### Purpose
-Time-limited currency for event-exclusive items. Creates urgency and event engagement.
-
-### Earning Event Tickets
-
-| Source | Amount | Notes |
-|--------|--------|-------|
-| Event daily login | 5 | During event |
-| Event tasks | 10-30 | Event-specific |
-| Event minigames | 5-15 | Per participation |
-| Event milestones | 20-50 | Achievement |
-
-### Spending Event Tickets
-
-| Item | Cost | Notes |
-|------|------|-------|
-| Event cosmetics | 50-200 | Limited time |
-| Event furniture | 30-150 | Themed items |
-| Event pets | 100-250 | Exclusive companions |
-| Event loot boxes* | 25-50 | If implemented (odds disclosed) |
-
-*Loot boxes optional and must follow Hytale's disclosure rules.
-
-### After Event Ends
-- Unspent tickets convert to small Cash amount
-- OR: Tickets carry over to next event (decision needed)
-- Event items become unobtainable (rarity increases)
+| Source | Box Type | Frequency |
+|--------|----------|-----------|
+| Level up (every level) | Common | Per level |
+| Level milestone (every 10 levels) | Rare | Per milestone |
+| Achievement (Gold tier) | Rare | One-time |
+| Achievement (Platinum tier) | Epic | One-time |
+| Weekly challenge completion | Rare | Weekly |
+| Event participation | Event-specific | Per event |
+| Fame tier promotion | Rare | Per tier |
 
 ---
 
 ## Economy Flow Diagram
 
 ```
-â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-â”‚                     EARNING SOURCES                          â”‚
-â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
-â”‚                                                              â”‚
-â”‚  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”        â”‚
-â”‚  â”‚  JOBS   â”‚  â”‚MINIGAMESâ”‚  â”‚ DAILY   â”‚  â”‚ EVENTS  â”‚        â”‚
-â”‚  â”‚         â”‚  â”‚         â”‚  â”‚ LOGIN   â”‚  â”‚         â”‚        â”‚
-â”‚  â””â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”˜  â””â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”˜  â””â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”˜  â””â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”˜        â”‚
-â”‚       â”‚            â”‚            â”‚            â”‚              â”‚
-â”‚       â–¼            â–¼            â–¼            â–¼              â”‚
-â”‚  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”       â”‚
-â”‚  â”‚                PLAYER WALLET                     â”‚       â”‚
-â”‚  â”‚  Cash: $$$    Orbs: â—‹â—‹â—‹    Anchor: â—†â—†â—†          â”‚       â”‚
-â”‚  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜       â”‚
-â”‚       â”‚            â”‚            â”‚                           â”‚
-â”‚       â–¼            â–¼            â–¼                           â”‚
-â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
-â”‚                     SPENDING SINKS                           â”‚
-â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
-â”‚                                                              â”‚
-â”‚  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”        â”‚
-â”‚  â”‚COSMETICSâ”‚  â”‚ HOUSING â”‚  â”‚ PARTIES â”‚  â”‚VIP/CRAFTâ”‚        â”‚
-â”‚  â”‚($/Orbs) â”‚  â”‚   ($)   â”‚  â”‚(Anchor) â”‚  â”‚(Anchor) â”‚        â”‚
-â”‚  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜        â”‚
-â”‚                                                              â”‚
-â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+┌─────────────────────────────────────────────────────────────┐
+│                     EARNING SOURCES                          │
+├─────────────────────────────────────────────────────────────┤
+│                                                              │
+│  ┌─────────┐  ┌─────────┐  ┌─────────┐  ┌─────────┐        │
+│  │  JOBS   │  │MINIGAMES│  │ DAILY   │  │ EVENTS  │        │
+│  │         │  │         │  │ LOGIN   │  │         │        │
+│  └────┬────┘  └────┬────┘  └────┬────┘  └────┬────┘        │
+│       │            │            │            │              │
+│       ▼            ▼            ▼            ▼              │
+│  ┌─────────────────────────────────────────────────────┐   │
+│  │               PLAYER WALLET                          │   │
+│  │  Cash: $$$              Gems: ◇◇◇                   │   │
+│  └─────────────────────────────────────────────────────┘   │
+│       │                         │                           │
+│       ▼                         ▼                           │
+├─────────────────────────────────────────────────────────────┤
+│                     SPENDING SINKS                           │
+├─────────────────────────────────────────────────────────────┤
+│                                                              │
+│  ┌─────────┐  ┌─────────┐  ┌─────────┐  ┌─────────┐        │
+│  │COSMETICS│  │ HOUSING │  │LOOTBOXES│  │ TRADING │        │
+│  │  (Cash) │  │  (Cash) │  │ (Gems)  │  │  (Cash) │        │
+│  └─────────┘  └─────────┘  └─────────┘  └─────────┘        │
+│                                                              │
+└─────────────────────────────────────────────────────────────┘
 ```
 
 ---
 
-## Trading System (Secondary Feature)
+## Trading System
 
 ### How It Works
 - Player-to-player direct trades
@@ -241,17 +215,17 @@ Time-limited currency for event-exclusive items. Creates urgency and event engag
 
 | Tradeable | Not Tradeable |
 |-----------|---------------|
-| Cash | Orbs |
-| Anchor items | Event Tickets |
+| Cash | Gems |
 | Cosmetics (most) | Account-bound items |
 | Furniture (most) | Achievement rewards |
-| Materials | Level/Fame |
+| Materials | Lootboxes (unopened) |
+| Crafting items | Level/Fame |
 
 ### Anti-Scam Measures
 - Trade confirmation delay (3 seconds)
 - "Are you sure?" for high-value trades
 - Report system for scammers
-- Trade history viewable
+- Trade history viewable for 30 days
 
 ---
 
@@ -259,23 +233,75 @@ Time-limited currency for event-exclusive items. Creates urgency and event engag
 
 | Risk | Prevention |
 |------|------------|
-| Too much Cash | Multiple sinks, no NPC buying |
-| Anchor devaluation | Strong sink variety |
-| Rich get richer | Hosting bonuses capped, decay exists |
-| New player poverty | Protected early progression, easy Cash |
+| Too much Cash | NPC sells at fixed prices, no buyback inflation |
+| Item devaluation | Lootbox odds maintain rarity |
+| Rich get richer | Fame bonuses capped, no exponential returns |
+| New player poverty | Generous early rewards, catch-up mechanics |
 
 ---
 
-## Open Questions
+## Event Currency
 
-| Question | Options |
-|----------|---------|
-| Anchor item name | See candidates above |
-| Event ticket carryover? | Convert to Cash or save for next? |
-| Exact earn/spend rates | Needs playtesting |
-| Trade tax? | Small % removed from trades to sink currency? |
+During seasonal events, a **temporary Event Token** is added:
+
+| Aspect | Details |
+|--------|---------|
+| Earning | Event tasks, minigames, daily login |
+| Spending | Event shop (exclusive items) |
+| After event | Converts to Cash (10 Tokens = $100) |
+| Tradeable | No |
+
+**Why temporary?** Creates urgency, doesn't clutter main economy, makes event items rare.
 
 ---
 
-*See FAME_SYSTEM.md for hosting bonus details.*  
+## Real Money Purchases (Optional)
+
+If monetization is enabled:
+
+| Package | Price | Contents |
+|---------|-------|----------|
+| Starter Pack | $4.99 | 100 Gems + 1 Rare Lootbox |
+| Gem Bundle (Small) | $4.99 | 150 Gems |
+| Gem Bundle (Medium) | $9.99 | 350 Gems |
+| Gem Bundle (Large) | $19.99 | 800 Gems |
+| Season Pass | $9.99 | See Progression System |
+
+**Rules:**
+- No gameplay advantages
+- No exclusive items (all earnable in-game)
+- Just faster access to cosmetics
+- Prices clearly displayed
+
+---
+
+## Balance Checkpoints
+
+### New Player (Level 1-10)
+- Should afford: First outfit, basic furniture
+- Cash earned: ~$5,000
+- Gems earned: ~50
+- Lootboxes opened: 5-8 (from leveling)
+
+### Mid Player (Level 11-30)
+- Should afford: Apartment upgrade, multiple outfits
+- Cash earned: ~$50,000 total
+- Gems earned: ~300 total
+- Lootboxes opened: 30-40
+
+### Established Player (Level 31-50)
+- Should afford: Loft apartment, full wardrobe
+- Cash earned: ~$200,000 total
+- Gems earned: ~800 total
+- Lootboxes opened: 80-100
+
+### Veteran (Level 51+)
+- Collecting rare items
+- Trading for specific pieces
+- Event exclusives become focus
+
+---
+
+*See FAME_SYSTEM.md for Fame milestone rewards.*
 *See JOBS_SYSTEM.md for earning rates by job.*
+*See HOUSING_SYSTEM.md for apartment costs.*

@@ -1,8 +1,8 @@
 # Hytale Vibe / Hangout Server — Vision Document
 
-**Project Codename:** Vibe  
-**Document Version:** 1.0  
-**Last Updated:** January 2026  
+**Project Codename:** Vibe
+**Document Version:** 2.0
+**Last Updated:** January 2026
 **Status:** Pre-Development / Planning
 
 ---
@@ -102,9 +102,21 @@ Making the world feel alive and worth returning to.
 
 1. **Never Pay-to-Win:** No gameplay advantages for money
 2. **Cosmetics First:** Revenue from appearance, not power
-3. **Transparent Pricing:** No hidden fees, clear value
+3. **Transparent Pricing:** No hidden fees, clear lootbox odds
 4. **Trust is Currency:** Player trust is more valuable than short-term revenue
-5. **Diversified Income:** Don't rely solely on player spending
+5. **Everything Earnable:** All items obtainable through gameplay
+
+---
+
+### Economy Model: Dual Currency + Lootboxes
+
+| Currency | How to Get | What It Buys |
+|----------|------------|--------------|
+| **Cash ($)** | Jobs, minigames, trading, daily login | Housing, basic cosmetics, parties |
+| **Gems** | Level ups, achievements, daily login, purchase | Lootboxes, premium shop items |
+| **Lootboxes** | Earned (leveling, achievements) or bought with Gems | Cosmetics, furniture, pets, currency |
+
+**See [Economy_System.md](Economy_System.md) for full details.**
 
 ---
 
@@ -112,25 +124,20 @@ Making the world feel alive and worth returning to.
 
 | Product | Description | Price Range |
 |---------|-------------|-------------|
-| **Cosmetic Packs** | Outfits, furniture sets, pets, particles | $2 - $15 |
-| **Season Pass** | Free + Premium track with exclusive cosmetics | $5 - $10/season |
-| **VIP Subscription** | Monthly perks (extra plots, titles, emotes) | $5 - $10/month |
-| **Housing Expansions** | Larger plots, additional plots | $3 - $10 |
-| **One-Time Bundles** | Themed collections (Cozy Cabin Pack, Neon Pack) | $10 - $25 |
+| **Gem Bundles** | Premium currency for lootboxes | $4.99 - $19.99 |
+| **Season Pass** | Free + Premium track with exclusive cosmetics | $9.99/season |
+| **Starter Pack** | One-time bundle (Gems + Rare Lootbox) | $4.99 |
 
-**What VIP Includes (Example):**
-- Exclusive cosmetics (monthly)
-- Extra housing plot
-- Custom title/badge
-- Priority event access
-- XP boost (cosmetic progression only)
-- Exclusive AFK zones
+**What Purchasing Gets You:**
+- Faster access to cosmetics (NOT exclusive items)
+- Support the server's development
+- All items also earnable through gameplay
 
-**What VIP Does NOT Include:**
+**What Purchasing Does NOT Get:**
 - Gameplay advantages
-- Pay-to-skip content
-- Exclusive minigame access
+- Exclusive items unavailable to free players
 - Economy advantages
+- Housing or progression boosts
 
 ---
 
@@ -171,14 +178,23 @@ Making the world feel alive and worth returning to.
 ### Phase 0: Foundation (Current)
 **Goal:** Establish vision, research tools, learn basics
 
+**Design & Planning:**
 - [x] Define server concept and pillars
 - [x] Research Hytale monetization policies
 - [x] Create Vision Document
+- [x] Design Economy System (Cash + Gems + Lootboxes)
+- [x] Design Fame System (gentle decay)
+- [x] Design Jobs System (Entry → Skilled progression)
+- [x] Design Housing System (5 tiers, parties)
+- [x] Design Progression System (Level 1-100)
+
+**Learning & Preparation:**
 - [ ] Learn Hytale building tools
 - [ ] Experiment with basic builds
 - [ ] Research scripting/modding capabilities
 - [ ] Identify skill gaps and learning path
 - [ ] Scout potential team members
+- [ ] Create Discord community
 
 **Deliverable:** Proof-of-concept build (one small social area)
 
@@ -187,37 +203,44 @@ Making the world feel alive and worth returning to.
 ### Phase 1: Core Loop
 **Goal:** Playable vertical slice with core features
 
-- [ ] Central hub / spawn area
-- [ ] Basic player housing system (claim + build)
-- [ ] One minigame (fishing or parkour)
-- [ ] Simple AFK reward system
-- [ ] Basic economy (earn currency, spend at shops)
+- [ ] Central hub / spawn area with key locations
+- [ ] Basic player housing system (Studio apartments)
+- [ ] One job (Delivery or Fishing)
+- [ ] One minigame (Parkour)
+- [ ] Simple AFK reward system (passive XP)
+- [ ] Basic economy (Cash earning and spending)
+- [ ] First lootbox implementation
 - [ ] Server branding (name, logo, color palette)
 
-**Deliverable:** Invite-only alpha for feedback
+**Deliverable:** Invite-only alpha for feedback (10-20 testers)
 
 ---
 
 ### Phase 2: Expansion
 **Goal:** Flesh out content and systems
 
+- [ ] 3-4 jobs with Skilled tier unlocks
 - [ ] 3-5 minigames
-- [ ] Roleplay systems (jobs, titles, bios)
-- [ ] Housing upgrades and furniture variety
-- [ ] Seasonal event framework
-- [ ] Ambient atmosphere (music, particles, NPCs)
-- [ ] Monetization infrastructure (store, VIP, passes)
+- [ ] Full housing tiers (Apartment → Mansion)
+- [ ] Party hosting system
+- [ ] Fame system with tiers
+- [ ] Full lootbox system (4 tiers)
+- [ ] Furniture variety and sets
+- [ ] Basic event framework
+- [ ] Gem purchase integration
 
-**Deliverable:** Closed beta with monetization testing
+**Deliverable:** Closed beta (50-100 testers)
 
 ---
 
 ### Phase 3: Community & Polish
 **Goal:** Public launch readiness
 
-- [ ] Onboarding experience (tutorial, welcome area)
+- [ ] Onboarding experience (tutorial island)
 - [ ] Moderation systems and staff team
 - [ ] Community features (guilds, friend lists, leaderboards)
+- [ ] Achievement system
+- [ ] Season Pass implementation
 - [ ] Marketing push (trailers, social media, creator outreach)
 - [ ] Stress testing and optimization
 - [ ] Legal/business setup (if needed)
@@ -229,10 +252,11 @@ Making the world feel alive and worth returning to.
 ### Phase 4: Live Operations
 **Goal:** Sustain and grow
 
-- [ ] Regular content updates
-- [ ] Seasonal events calendar
+- [ ] Regular content updates (monthly)
+- [ ] Seasonal events calendar (4/year)
+- [ ] New jobs and minigames
 - [ ] Community feedback loops
-- [ ] Revenue optimization
+- [ ] Revenue analysis and optimization
 - [ ] Team scaling as needed
 
 ---

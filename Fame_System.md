@@ -1,19 +1,21 @@
 # Fame System
 
-**Purpose:** Social status that rewards active, social players.  
+**Purpose:** Social status that rewards active, social players.
 **Status:** Concept Phase
+**Last Updated:** January 2026
 
 ---
 
 ## Core Concept
 
-Fame measures how **known** and **active** a player is. It's not a currency â€” it's a reputation score that unlocks benefits and shows status.
+Fame measures how **known** and **active** a player is. It's not a currency — it's a reputation score that unlocks benefits and shows status.
 
 **Key Principles:**
 - Fame must be earned continuously (decay exists)
-- True grinders rank high, half-actives stay middle
+- Active players rank high, casual players stay middle
 - No hard cap, but diminishing display returns
 - Leaderboard rank matters more than raw number
+- Decay is gentle, not punishing
 
 ---
 
@@ -25,6 +27,7 @@ Fame measures how **known** and **active** a player is. It's not a currency â�
 | **Passive Income** | Higher fame = better hosting bonuses |
 | **Exclusivity** | Fame-locked cosmetics and areas |
 | **Recognition** | Leaderboard presence, being "known" |
+| **Lootboxes** | Rare Lootbox reward on tier promotion |
 | **Aspiration** | Seeing high-fame players creates goals |
 
 ---
@@ -33,43 +36,44 @@ Fame measures how **known** and **active** a player is. It's not a currency â�
 
 | Action | Fame Gained | Notes |
 |--------|-------------|-------|
-| Daily login | +5 | Baseline for showing up |
+| Daily login | +10 | Shows up every day |
 | Someone visits your apartment | +2 | Encourages good apartments |
 | Someone likes your apartment | +5 | Quality over quantity |
-| Hosting party (per guest per 5 min) | +1 | Core fame engine |
-| Guest plays minigame at your party | +3 | Encourages fun parties |
-| Winning public minigame | +10 | Skill reward |
-| Job task completed | +1 | Grind reward |
-| Achievement unlocked | +20-100 | Milestone spikes |
-| Event participation | +15 | Engagement reward |
+| Hosting party (per guest per 5 min) | +1-3 | Core fame engine (scales with party tier) |
+| Guest plays minigame at your party | +2 | Encourages fun parties |
+| Winning public minigame | +5 | Skill reward |
+| Job task completed | +1 | Standard jobs |
+| Entertainment job task | +2-3 | Social jobs give more |
+| Achievement unlocked | +10-50 | Milestone spikes |
+| Event participation | +10-30 | Engagement reward |
 
 **Design Note:** Fame sources are varied so players can earn through different playstyles.
 
 ---
 
-## Fame Decay â€” Threshold Model
+## Fame Decay — Gentle Threshold Model
 
 ### The Problem to Solve
 - Active players should rank high
-- Half-active players should rank middle
-- Inactive players should fall
-- Nobody should "retire" at the top
+- Casual players should stay in middle tiers (not punished)
+- Inactive players should gradually fall
+- Nobody should "retire" at the top permanently
 
 ### How It Works
 
-**Daily Threshold:** Minimum fame to earn that day to avoid decay.
+**Daily Threshold:** Minimum fame to earn that day to avoid decay. Thresholds are LOW to be friendly to casual players.
 
-| Current Fame | Rank Tier | Daily Threshold |
-|--------------|-----------|-----------------|
-| 0 - 499 | Newcomer | 0 (Protected) |
-| 500 - 1,999 | Local | 25 |
-| 2,000 - 4,999 | Known | 40 |
-| 5,000 - 9,999 | Popular | 60 |
-| 10,000 - 24,999 | Celebrity | 80 |
-| 25,000 - 49,999 | Star | 100 |
-| 50,000+ | Icon | 120 (Capped) |
+| Current Fame | Rank Tier | Daily Threshold | Easy to Hit? |
+|--------------|-----------|-----------------|--------------|
+| 0 - 999 | Newcomer | 0 (Protected) | Always safe |
+| 1,000 - 2,999 | Local | 10 | Login = done |
+| 3,000 - 5,999 | Known | 15 | Login + 1 activity |
+| 6,000 - 11,999 | Popular | 20 | Login + few tasks |
+| 12,000 - 24,999 | Celebrity | 30 | ~30 min playtime |
+| 25,000 - 49,999 | Star | 40 | ~45 min playtime |
+| 50,000+ | Icon | 50 (Capped) | ~1 hour playtime |
 
-**Threshold caps at 120** â€” even with 1 million fame, you only need 120/day.
+**Key Change:** Daily login gives +10 Fame, so most thresholds are easily met just by logging in and doing minimal activity.
 
 ---
 
@@ -78,65 +82,62 @@ Fame measures how **known** and **active** a player is. It's not a currency â�
 | Scenario | What Happens |
 |----------|--------------|
 | **Hit threshold** | No decay, fame grows |
-| **Miss threshold (Day 1)** | Warning, no decay yet |
-| **Miss threshold (Day 2)** | -5% fame |
-| **Miss threshold (Day 3+)** | -7% fame per day |
+| **Miss threshold (Day 1-2)** | Grace period, no decay |
+| **Miss threshold (Day 3)** | -3% fame |
+| **Miss threshold (Day 4+)** | -5% fame per day |
 | **Return and hit threshold** | Decay stops immediately |
 
-### Half-Active Prevention
+### Why Gentler Decay?
 
-**Problem:** Player earns 30 fame, threshold is 40. They're "active" but not enough.
+**Problem with harsh decay:** Players feel punished for real life (vacation, busy week, etc.)
 
-**Solution:** Partial credit doesn't exist. Either hit threshold or don't.
-
-| Earned | Threshold | Result |
-|--------|-----------|--------|
-| 45 | 40 | âœ“ No decay |
-| 39 | 40 | âœ— Counts as miss |
-| 0 | 40 | âœ— Counts as miss |
-
-**This forces commitment:** You can't coast at 50% effort.
+**Solution:** 2-day grace period + lower percentages. Players who take a break come back without devastating losses.
 
 ---
 
 ### Decay Math Examples
 
-**Example A: Celebrity goes inactive**
+**Example A: Celebrity goes on vacation (1 week)**
 
 ```
-Day 0: 7,000 Fame (Celebrity, threshold 60)
-Day 1: Earns 20 fame â€” MISS (warning)
-Day 2: Earns 0 fame â€” MISS (-5%) = 6,650
-Day 3: Earns 0 fame â€” MISS (-7%) = 6,185
-Day 4: Earns 0 fame â€” MISS (-7%) = 5,752
-Day 5: Earns 75 fame â€” HIT, decay stops at 5,752
+Day 0: 15,000 Fame (Celebrity, threshold 30)
+Day 1: Earns 0 fame — MISS (grace)
+Day 2: Earns 0 fame — MISS (grace)
+Day 3: Earns 0 fame — MISS (-3%) = 14,550
+Day 4: Earns 0 fame — MISS (-5%) = 13,823
+Day 5: Earns 0 fame — MISS (-5%) = 13,132
+Day 6: Earns 0 fame — MISS (-5%) = 12,475
+Day 7: Returns, earns 40 fame — HIT, stops at 12,475
+
+Lost ~17% over a week. Recoverable in a few days of active play.
 ```
 
-**Example B: Half-active player**
+**Example B: Casual player (plays every other day)**
 
 ```
-Day 0: 3,000 Fame (Known, threshold 40)
-Day 1: Earns 35 fame â€” MISS (warning)
-Day 2: Earns 38 fame â€” MISS (-5%) = 2,850
-Day 3: Earns 42 fame â€” HIT, decay stops
-Day 4: Earns 30 fame â€” MISS (warning)
-Day 5: Earns 25 fame â€” MISS (-5%) = 2,708
-...cycles between decay and recovery, stays mid-tier
+Day 0: 4,000 Fame (Known, threshold 15)
+Day 1: Earns 25 fame — HIT = 4,025
+Day 2: Earns 0 fame — MISS (grace)
+Day 3: Earns 30 fame — HIT = 4,055
+Day 4: Earns 0 fame — MISS (grace)
+Day 5: Earns 20 fame — HIT = 4,075
+
+Casual player maintains and slowly grows. System doesn't punish them.
 ```
 
-**Example C: True grinder**
+**Example C: Active grinder**
 
 ```
-Day 0: 15,000 Fame (Celebrity, threshold 80)
-Day 1: Earns 150 fame â€” HIT = 15,150
-Day 2: Earns 200 fame â€” HIT = 15,350
-Day 3: Earns 180 fame â€” HIT = 15,530
+Day 0: 8,000 Fame (Popular, threshold 20)
+Day 1: Earns 80 fame — HIT = 8,080
+Day 2: Earns 100 fame — HIT = 8,180
+Day 3: Earns 90 fame — HIT = 8,270
 ...consistently grows, climbs leaderboard
 ```
 
 ---
 
-## Fame Display â€” Rank Over Number
+## Fame Display — Rank Over Number
 
 ### Why Hide Raw Numbers?
 
@@ -149,11 +150,11 @@ Day 3: Earns 180 fame â€” HIT = 15,530
 
 Instead of: `Fame: 47,832`
 
-Show: `â˜… Star #12`
+Show: `★★ Star #12`
 
 | Component | Meaning |
 |-----------|---------|
-| â˜… | Tier icon |
+| ★★ | Tier icon |
 | Star | Tier name |
 | #12 | Leaderboard position within tier (or global) |
 
@@ -161,27 +162,28 @@ Show: `â˜… Star #12`
 
 | Fame Range | Title | Icon |
 |------------|-------|------|
-| 0 - 499 | Newcomer | Â· |
-| 500 - 1,999 | Local | â—‹ |
-| 2,000 - 4,999 | Known | â— |
-| 5,000 - 9,999 | Popular | â— |
-| 10,000 - 24,999 | Celebrity | â˜… |
-| 25,000 - 49,999 | Star | â˜…â˜… |
-| 50,000 - 99,999 | Icon | â˜…â˜…â˜… |
-| 100,000+ | Legend | âœ¦ |
+| 0 - 999 | Newcomer | · |
+| 1,000 - 2,999 | Local | ○ |
+| 3,000 - 5,999 | Known | ● |
+| 6,000 - 11,999 | Popular | ◆ |
+| 12,000 - 24,999 | Celebrity | ★ |
+| 25,000 - 49,999 | Star | ★★ |
+| 50,000 - 99,999 | Icon | ★★★ |
+| 100,000+ | Legend | ✦ |
 
-### Prestige Tiers (High Fame)
+### Tier Promotion Rewards
 
-For players beyond Icon, add prestige markers:
+**Every time you reach a new tier:**
 
-| Fame | Display |
-|------|---------|
-| 50,000 | Icon I |
-| 75,000 | Icon II |
-| 100,000 | Legend I |
-| 150,000 | Legend II |
-| 200,000 | Legend III |
-| ... | ... |
+| New Tier | Reward |
+|----------|--------|
+| Local | 1 Common Lootbox |
+| Known | 1 Rare Lootbox + 25 Gems |
+| Popular | 1 Rare Lootbox + 50 Gems + Cosmetic |
+| Celebrity | 1 Epic Lootbox + 100 Gems + Title |
+| Star | 1 Epic Lootbox + 200 Gems + Exclusive Cosmetic |
+| Icon | 1 Legendary Lootbox + 500 Gems + Unique Effect |
+| Legend | 1 Legendary Lootbox + 1,000 Gems + Monument Option |
 
 ---
 
@@ -202,16 +204,16 @@ When you host a party, you earn a percentage of what guests earn:
 | Icon | 3% |
 | Legend | 3.5% |
 
-**Example:** You're a Star hosting 15 guests. They collectively earn 10,000 Cash playing minigames. You get 250 Cash (2.5%) as hosting bonus.
+**Example:** You're a Star hosting 15 guests. They collectively earn $10,000 Cash playing minigames. You get $250 Cash (2.5%) as hosting bonus.
 
 ### Other Fame Benefits
 
 | Tier | Unlocks |
 |------|---------|
-| Local (500) | Can host basic parties |
-| Known (2,000) | Apartment featured in "Rising" list |
-| Popular (5,000) | Exclusive cosmetic set unlocked |
-| Celebrity (10,000) | VIP lounge access, premium party hosting |
+| Local (1,000) | Can host Small parties |
+| Known (3,000) | Apartment featured in "Rising" list |
+| Popular (6,000) | Exclusive cosmetic set, Big parties |
+| Celebrity (12,000) | VIP lounge access, Mega parties |
 | Star (25,000) | Exclusive title colors, rare cosmetics |
 | Icon (50,000) | Legacy cosmetics, permanent recognition |
 | Legend (100,000) | Ultimate flex items, monument in city |
@@ -226,10 +228,10 @@ When you host a party, you earn a percentage of what guests earn:
 
 **Solutions:**
 
-1. **Threshold still applies** â€” Even #1 must earn 120 fame daily
-2. **Diminishing hosting returns** â€” After X hours/day, hosting fame gains reduce
-3. **Guest diversity bonus** â€” Same guests = less fame; new guests = more fame
-4. **Leaderboard resets** â€” Weekly/monthly competitive leaderboards alongside lifetime
+1. **Threshold still applies** — Even #1 must earn 50 fame daily
+2. **Diminishing hosting returns** — After 4 hours/day, hosting fame gains reduce by 50%
+3. **Guest diversity bonus** — Same guests = normal fame; new guests = +50% fame
+4. **Leaderboard resets** — Weekly/monthly competitive leaderboards alongside lifetime
 
 ### Catch-Up Mechanics
 
@@ -237,10 +239,10 @@ When you host a party, you earn a percentage of what guests earn:
 
 **Solutions:**
 
-1. **Decay equalizes over time** â€” Inactive veterans fall
-2. **Events spike fame** â€” Limited-time high-fame opportunities
-3. **Tier-based competition** â€” Compete within your tier, not globally
-4. **Seasonal rankings** â€” Fresh starts for competitive players
+1. **Decay equalizes over time** — Inactive veterans fall
+2. **Events spike fame** — Limited-time high-fame opportunities
+3. **Tier-based competition** — Compete within your tier, not globally
+4. **Seasonal rankings** — Fresh starts for competitive players
 
 ---
 
@@ -249,8 +251,8 @@ When you host a party, you earn a percentage of what guests earn:
 | Question | Considerations |
 |----------|----------------|
 | Exact threshold numbers | Need playtesting to feel fair |
-| Decay percentages | 5%/7% might be too harsh or lenient |
-| Hosting diminishing returns | After how many hours? |
+| Decay percentages | 3%/5% might need adjustment |
+| Hosting diminishing returns | After 4 hours feels right? |
 | Guest diversity formula | How to calculate "new" guests? |
 | Seasonal reset frequency | Weekly? Monthly? Quarterly? |
 
@@ -259,16 +261,17 @@ When you host a party, you earn a percentage of what guests earn:
 ## Summary
 
 Fame rewards players who:
-- Show up consistently
+- Show up consistently (daily login helps!)
 - Create social value (parties, good apartments)
 - Engage with multiple systems
-- Commit to the threshold, not half-effort
+- Maintain activity without burnout
 
-Fame punishes:
-- Inactivity
-- Half-hearted engagement
-- Trying to "retire" at the top
+Fame is gentle to:
+- Casual players (low thresholds, grace periods)
+- Real life interruptions (recoverable decay)
+- New players (protected newcomer tier)
 
 ---
 
 *See ECONOMY_SYSTEM.md for how Fame interacts with currencies.*
+*See HOUSING_SYSTEM.md for party hosting details.*

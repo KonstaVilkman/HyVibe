@@ -1,7 +1,8 @@
 # Jobs System
 
-**Purpose:** Active earning through task-based gameplay with progression.  
+**Purpose:** Active earning through task-based gameplay with progression.
 **Status:** Concept Phase
+**Last Updated:** January 2026
 
 ---
 
@@ -10,10 +11,11 @@
 Jobs are **task-based gameplay loops**, not roleplay. Players complete specific actions, earn rewards, and progress through tiers.
 
 **Key Principles:**
-- No acting required â€” just complete tasks
-- Clear progression (Entry â†’ Skilled)
+- No acting required — just complete tasks
+- Clear progression (Entry → Skilled)
 - Each job has unique gameplay
 - Jobs contribute to Fame and Economy
+- No premium currency requirements
 
 ---
 
@@ -23,8 +25,8 @@ Jobs are **task-based gameplay loops**, not roleplay. Players complete specific 
 
 | Tier | Unlock Requirement | Pay Rate | Complexity |
 |------|-------------------|----------|------------|
-| **Entry** | Available at start | Low | Simple tasks |
-| **Skilled** | Job Level 10 + Anchor cost | Higher | More involved tasks |
+| **Entry** | Available at start | $10-15/task | Simple tasks |
+| **Skilled** | Job Level 10 + $1,000 | $25-40/task | More involved tasks |
 
 ### Job Leveling
 
@@ -32,7 +34,7 @@ Jobs are **task-based gameplay loops**, not roleplay. Players complete specific 
 |-----------|-------------|---------|
 | 1 | 0 | Entry tier access |
 | 5 | 500 | Efficiency bonus (+10% pay) |
-| 10 | 1,500 | Skilled tier available (costs Anchor) |
+| 10 | 1,500 | Skilled tier available ($1,000 unlock) |
 | 15 | 3,000 | Cosmetic unlock (job outfit) |
 | 20 | 5,000 | Title unlock ("Master [Job]") |
 
@@ -46,8 +48,8 @@ Jobs are **task-based gameplay loops**, not roleplay. Players complete specific 
 
 | Tier | Role | Tasks | Rewards |
 |------|------|-------|---------|
-| **Entry** | Runner | Pick up package â†’ Walk to destination â†’ Deliver within time limit | $10-20, +1 Fame, Job XP |
-| **Skilled** | Driver | Pick up multiple packages â†’ Drive route â†’ Deliver all efficiently | $25-40, +2 Fame, Job XP |
+| **Entry** | Runner | Pick up package → Walk to destination → Deliver within time limit | $10-15, +1 Fame, Job XP |
+| **Skilled** | Driver | Pick up multiple packages → Drive route → Deliver all efficiently | $25-40, +2 Fame, Job XP |
 
 **Gameplay Loop:**
 1. Go to dispatch location
@@ -63,12 +65,12 @@ Jobs are **task-based gameplay loops**, not roleplay. Players complete specific 
 
 ### Food Service
 
-**Fantasy:** You work at a restaurant/cafÃ© serving customers.
+**Fantasy:** You work at a restaurant/café serving customers.
 
 | Tier | Role | Tasks | Rewards |
 |------|------|-------|---------|
-| **Entry** | Cashier | NPC approaches â†’ Select correct order â†’ Complete transaction | $8-15, +1 Fame, Job XP |
-| **Skilled** | Server | Take orders â†’ Deliver to tables â†’ Handle multiple customers | $20-35, +2 Fame, Job XP |
+| **Entry** | Cashier | NPC approaches → Select correct order → Complete transaction | $10-15, +1 Fame, Job XP |
+| **Skilled** | Server | Take orders → Deliver to tables → Handle multiple customers | $25-40, +2 Fame, Job XP |
 
 **Gameplay Loop:**
 1. Go to restaurant work station
@@ -88,8 +90,8 @@ Jobs are **task-based gameplay loops**, not roleplay. Players complete specific 
 
 | Tier | Role | Tasks | Rewards |
 |------|------|-------|---------|
-| **Entry** | Cashier | Ring up NPC customers â†’ Handle transactions | $8-15, +1 Fame, Job XP |
-| **Skilled** | Shop Assistant | Restock shelves â†’ Clean store â†’ Help customers â†’ Manage inventory | $20-35, +2 Fame, Job XP |
+| **Entry** | Cashier | Ring up NPC customers → Handle transactions | $10-15, +1 Fame, Job XP |
+| **Skilled** | Shop Assistant | Restock shelves → Clean store → Help customers → Manage inventory | $25-40, +2 Fame, Job XP |
 
 **Gameplay Loop (Skilled):**
 1. Go to shop
@@ -109,8 +111,8 @@ Jobs are **task-based gameplay loops**, not roleplay. Players complete specific 
 
 | Tier | Role | Tasks | Rewards |
 |------|------|-------|---------|
-| **Entry** | Shore Fisher | Cast line â†’ Wait â†’ Catch fish | Fish items, $5-15, Job XP |
-| **Skilled** | Boat Fisher | Access boat â†’ Go to better spots â†’ Catch rarer fish | Rare fish, $15-30, Job XP |
+| **Entry** | Shore Fisher | Cast line → Wait → Catch fish | Fish items, $10-15, Job XP |
+| **Skilled** | Boat Fisher | Access boat → Go to better spots → Catch rarer fish | Rare fish, $25-40, Job XP |
 
 **Gameplay Loop:**
 1. Go to fishing spot (shore or boat)
@@ -123,10 +125,15 @@ Jobs are **task-based gameplay loops**, not roleplay. Players complete specific 
 **Skill Expression:** Timing, spot knowledge, patience
 
 **Catch Tiers:**
-- Common: $5 each
-- Uncommon: $15 each
-- Rare: $50 each
-- Legendary: $200+ each (event displays, flex)
+
+| Rarity | Sell Value | Chance |
+|--------|------------|--------|
+| Common | $10 | 60% |
+| Uncommon | $25 | 25% |
+| Rare | $75 | 12% |
+| Legendary | $200 | 3% |
+
+**Note:** Legendary fish are rare enough (3%) that fishing doesn't break economy. Average fish value ~$20.
 
 ---
 
@@ -136,8 +143,8 @@ Jobs are **task-based gameplay loops**, not roleplay. Players complete specific 
 
 | Tier | Role | Tasks | Rewards |
 |------|------|-------|---------|
-| **Entry** | Street Performer | Go to designated spot â†’ Start performance â†’ Earn tips based on audience | Tips ($), +2 Fame, Job XP |
-| **Skilled** | Club DJ | Access DJ booth (VIP venues) â†’ Select tracks â†’ Build crowd â†’ Earn based on party size | $30-60, +3 Fame, Job XP |
+| **Entry** | Street Performer | Go to designated spot → Start performance → Earn tips based on audience | Tips ($), +2 Fame, Job XP |
+| **Skilled** | Club DJ | Access DJ booth (VIP venues) → Select tracks → Build crowd → Earn based on party size | $30-50, +3 Fame, Job XP |
 
 **Gameplay Loop (DJ):**
 1. Go to venue with DJ booth
@@ -149,18 +156,20 @@ Jobs are **task-based gameplay loops**, not roleplay. Players complete specific 
 
 **Skill Expression:** Reading crowd, music selection, timing
 
+**Note:** Entertainment gives more Fame (+2/+3 vs +1) because it's inherently social.
+
 ---
 
-### Sanitation (Optional)
+### Sanitation
 
 **Fantasy:** Keep the city clean for rewards.
 
 | Tier | Role | Tasks | Rewards |
 |------|------|-------|---------|
-| **Entry** | Street Cleaner | Find trash around city â†’ Pick up â†’ Dispose | $5-10, Job XP |
-| **Skilled** | Maintenance | Fix broken items â†’ Clean graffiti â†’ Larger area management | $15-25, Job XP |
+| **Entry** | Street Cleaner | Find trash around city → Pick up → Dispose | $10-15, Job XP |
+| **Skilled** | Maintenance | Fix broken items → Clean graffiti → Larger area management | $25-35, Job XP |
 
-**Why Include:** Low-effort background job, always available, helps city feel alive.
+**Why Include:** Low-effort background job, always available, helps city feel alive. Good for AFK-lite players.
 
 ---
 
@@ -173,7 +182,7 @@ Jobs are **task-based gameplay loops**, not roleplay. Players complete specific 
 | Level 5 | +10% pay bonus | More money per task |
 | Level 10 | Unlock Skilled tier | Better tasks, more rewards |
 | Level 15 | Job cosmetic set | Flex your dedication |
-| Level 20 | Job title | "Master Chef", "Expert Driver" |
+| Level 20 | Job title + Rare Lootbox | "Master Chef", "Expert Driver" |
 
 ### Why Unlock Skilled Tier?
 
@@ -187,12 +196,12 @@ Jobs are **task-based gameplay loops**, not roleplay. Players complete specific 
 
 ### Unlock Cost
 
-**Skilled Unlock = Job Level 10 + 3 [ANCHOR]**
+**Skilled Unlock = Job Level 10 + $1,000**
 
 This creates:
-- Anchor sink
+- Cash sink (affordable but meaningful)
 - Meaningful progression gate
-- Decision point (which career to invest in?)
+- Decision point (which career to invest in first?)
 
 ---
 
@@ -207,14 +216,15 @@ This creates:
 | No penalties | Encourage exploration |
 | Specialize if desired | Bonuses for focus |
 
-### Specialization Bonus (Optional)
+### Specialization Bonus
 
 If a player reaches Level 20 in a job:
 - +15% pay for that job permanently
 - "Master" title available
 - Exclusive master cosmetic
+- 1 Rare Lootbox reward
 
-This rewards dedication without punishing variety.
+**Clarification:** The +15% bonus only applies when doing THAT specific job. Switching jobs doesn't transfer the bonus.
 
 ---
 
@@ -227,8 +237,8 @@ Encourages daily engagement without forcing grind.
 | Bonus | Details |
 |-------|---------|
 | First task of the day | 2x Cash, 2x XP |
-| Three different jobs in a day | Bonus $100 |
-| Complete 20 tasks in a day | Bonus Orbs (5) |
+| Three different jobs in a day | Bonus $200 |
+| Complete 20 tasks in a day | Bonus 10 Gems |
 
 ---
 
@@ -236,15 +246,15 @@ Encourages daily engagement without forcing grind.
 
 | Action | XP Gained |
 |--------|-----------|
-| Entry task completed | 10 XP |
-| Skilled task completed | 20 XP |
+| Entry task completed | 15 XP |
+| Skilled task completed | 25 XP |
 | Perfect task (fast/accurate) | +5 bonus XP |
 | Daily first task | 2x XP |
 
 **Time to Level 10:**
-- ~150 Entry tasks
-- At 1 minute per task = ~2.5 hours of job work
-- Spread over days = achievable in first week
+- ~100 Entry tasks
+- At 1 minute per task = ~1.5-2 hours of job work
+- Spread over days = achievable in first few days
 
 ---
 
@@ -255,7 +265,7 @@ Encourages daily engagement without forcing grind.
 | Job Tier | Tasks/Hour | Cash/Task | Cash/Hour |
 |----------|------------|-----------|-----------|
 | Entry | 30-40 | $12 avg | $360-480 |
-| Skilled | 20-30 | $30 avg | $600-900 |
+| Skilled | 20-30 | $32 avg | $640-960 |
 
 **Note:** These are active play rates. AFK/idle earnings are separate and lower.
 
@@ -264,12 +274,41 @@ Encourages daily engagement without forcing grind.
 | Source | Cash/Hour |
 |--------|-----------|
 | Entry Jobs | $400 |
-| Skilled Jobs | $750 |
-| Minigames | $300-500 |
+| Skilled Jobs | $800 |
+| Minigames | $400-600 |
 | AFK Idle | $50-100 |
 | Trading | Variable |
 
-Jobs should be competitive but not dominant.
+Jobs should be competitive but not dominant. Minigames are comparable for variety.
+
+---
+
+## Minigames (Separate from Jobs)
+
+Minigames are **standalone activities**, not jobs. They exist in:
+- Public areas (anyone can join)
+- Party apartments (during hosted parties)
+- Event venues (seasonal)
+
+### Minigame List
+
+| Minigame | Type | Rewards |
+|----------|------|---------|
+| Parkour | Timed race | $30-50 + Fame |
+| Fishing Tournament | Competition | $50-100 + prizes |
+| Trivia | Knowledge | $20-40 + Fame |
+| Racing | Foot/boat | $30-50 + Fame |
+| Hide & Seek | Social | $20-30 |
+| Rhythm Game | Music | $25-45 |
+
+### Minigame vs Job
+
+| Aspect | Jobs | Minigames |
+|--------|------|-----------|
+| Availability | Always | Scheduled/area-based |
+| Progression | Job levels, titles | Leaderboards |
+| Rewards | Steady Cash | Variable Cash + Fame |
+| Social | Solo activity | Often multiplayer |
 
 ---
 
@@ -278,10 +317,10 @@ Jobs should be competitive but not dominant.
 | Question | Considerations |
 |----------|----------------|
 | Exact task mechanics | Depends on Hytale's capabilities |
-| Job count at launch | Start with 3-4, expand later? |
-| Skilled unlock cost | 3 Anchor feels right? |
-| Sanitation inclusion | Nice to have or cut? |
-| PvP jobs? | Bounty hunter, competitive fishing? |
+| Job count at launch | Start with 4-5, expand later? |
+| Minigame variety | Which are feasible to build? |
+| Sanitation inclusion | Keep as low-effort option? |
+| Competitive jobs? | Bounty hunter, competitive fishing? |
 
 ---
 
@@ -292,10 +331,11 @@ Jobs provide:
 - Clear progression with meaningful unlocks
 - Task-based gameplay (not roleplay)
 - Contribution to Fame
-- Anchor sinks (Skilled unlock)
+- Cash sinks (Skilled unlock)
 - Identity through job mastery
+- Lootbox rewards at milestones
 
 ---
 
-*See ECONOMY_SYSTEM.md for currency details.*  
+*See ECONOMY_SYSTEM.md for currency details and lootbox system.*
 *See PROGRESSION_SYSTEM.md for how jobs fit overall leveling.*

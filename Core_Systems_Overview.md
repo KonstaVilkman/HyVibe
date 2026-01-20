@@ -1,7 +1,8 @@
 # Core Systems Overview
 
-**Purpose:** High-level view of how all systems connect.  
+**Purpose:** High-level view of how all systems connect.
 **Status:** Concept Phase
+**Last Updated:** January 2026
 
 ---
 
@@ -16,8 +17,8 @@ PLAY → EARN → SPEND → FLEX → ASPIRE → PLAY
 │   │  PLAY   │───▶│  EARN   │───▶│  SPEND  │           │
 │   │         │    │         │    │         │           │
 │   │Jobs     │    │Cash     │    │Housing  │           │
-│   │Minigames│    │Orbs     │    │Cosmetics│           │
-│   │Socialize│    │Anchor   │    │Unlocks  │           │
+│   │Minigames│    │Gems     │    │Lootboxes│           │
+│   │Socialize│    │Lootboxes│    │Cosmetics│           │
 │   │Idle     │    │Fame     │    │Parties  │           │
 │   └─────────┘    └─────────┘    └─────────┘           │
 │        ▲                              │                │
@@ -38,8 +39,9 @@ PLAY → EARN → SPEND → FLEX → ASPIRE → PLAY
 
 | System | Purpose | Connects To |
 |--------|---------|-------------|
+| **Economy** | Resource flow (Cash + Gems) | Jobs, Lootboxes, Housing, Trading |
+| **Lootboxes** | Primary reward vehicle | Economy, Progression, Fame, Events |
 | **Fame** | Social status, hosting power | Parties, Leaderboards, Titles |
-| **Economy** | Resource flow, trading | Jobs, Shops, Housing, Sinks |
 | **Jobs** | Active earning, progression | Economy, Fame, Unlocks |
 | **Housing** | Personal space, flex | Economy, Fame (parties), Cosmetics |
 | **Progression** | Long-term goals, unlocks | All systems |
@@ -50,40 +52,35 @@ PLAY → EARN → SPEND → FLEX → ASPIRE → PLAY
 
 ```
          EARNING                          SPENDING
-         
+
 ┌─────────────────┐              ┌─────────────────┐
 │                 │              │                 │
 │  Jobs ─────────▶│              │◀───── Housing   │
 │  Minigames ────▶│    CASH      │◀───── Cosmetics │
-│  Daily Login ──▶│     ($)      │◀───── Basic     │
-│  Selling ──────▶│              │        Items    │
+│  Daily Login ──▶│     ($)      │◀───── Parties   │
+│  Trading ──────▶│              │◀───── Trading   │
+│  Lootboxes ────▶│              │                 │
 │                 │              │                 │
 └─────────────────┘              └─────────────────┘
 
 ┌─────────────────┐              ┌─────────────────┐
 │                 │              │                 │
-│  Achievements ─▶│              │◀───── Premium   │
-│  Milestones ───▶│    ORBS      │        Cosmetics│
-│  Rare Drops ───▶│              │◀───── Exclusive │
-│  Events ───────▶│              │        Items    │
-│                 │              │                 │
+│  Level Ups ────▶│              │◀───── Common    │
+│  Achievements ─▶│    GEMS      │        Lootbox  │
+│  Daily Login ──▶│              │◀───── Rare      │
+│  Fame Tiers ───▶│              │        Lootbox  │
+│  Events ───────▶│              │◀───── Epic/     │
+│                 │              │        Legendary│
 └─────────────────┘              └─────────────────┘
 
 ┌─────────────────┐              ┌─────────────────┐
 │                 │              │                 │
-│  Jobs ─────────▶│              │◀───── Parties   │
-│  Milestones ───▶│   ANCHOR     │◀───── Crafting  │
-│  Events ───────▶│    [TBD]     │◀───── VIP Areas │
-│  Trading ──────▶│              │◀───── Rerolls   │
-│                 │              │◀───── Unlocks   │
-└─────────────────┘              └─────────────────┘
-
-┌─────────────────┐              ┌─────────────────┐
+│  Level Ups ────▶│              │◀───── Cosmetics │
+│  Achievements ─▶│  LOOTBOXES   │◀───── Furniture │
+│  Fame Tiers ───▶│              │◀───── Pets      │
+│  Challenges ───▶│              │◀───── Currency  │
+│  Events ───────▶│              │◀───── Materials │
 │                 │              │                 │
-│  Event Tasks ──▶│    EVENT     │◀───── Event     │
-│  Participation─▶│   TICKETS    │        Shop     │
-│  Challenges ───▶│              │◀───── Limited   │
-│                 │              │        Items    │
 └─────────────────┘              └─────────────────┘
 ```
 
@@ -101,7 +98,7 @@ PLAY → EARN → SPEND → FLEX → ASPIRE → PLAY
 │  │Get Visits   │                 │(% of guest  │       │
 │  │Win Games    │                 │ earnings)   │       │
 │  │Complete Jobs│                 └─────────────┘       │
-│  │Socialize    │                                       │
+│  │Daily Login  │                                       │
 │  └──────┬──────┘                 ┌─────────────┐       │
 │         │                        │Title/Rank   │       │
 │         ▼                        │Display      │       │
@@ -109,12 +106,12 @@ PLAY → EARN → SPEND → FLEX → ASPIRE → PLAY
 │  │ FAME TOTAL  │────────────────▶                     │
 │  └──────┬──────┘                 ┌─────────────┐       │
 │         │                        │Leaderboard  │       │
-│         │   DECAY                │Position     │       │
-│         ▼   (if threshold missed)└─────────────┘       │
+│         │   GENTLE DECAY         │Position     │       │
+│         ▼   (grace period)       └─────────────┘       │
 │  ┌─────────────┐                                       │
 │  │ Threshold   │                 ┌─────────────┐       │
-│  │ Check Daily │                 │Exclusive    │       │
-│  └─────────────┘                 │Unlocks      │       │
+│  │ Check Daily │                 │Tier Rewards │       │
+│  └─────────────┘                 │(Lootboxes!) │       │
 │                                  └─────────────┘       │
 └─────────────────────────────────────────────────────────┘
 ```
@@ -123,27 +120,28 @@ PLAY → EARN → SPEND → FLEX → ASPIRE → PLAY
 
 ## Player Journey
 
-### Early Game (Level 1-10)
-- Spawn in Rooftop Hub
+### Early Game (Level 1-25)
+- Spawn in Central Hub
 - Explore, meet players
 - Start Entry-level job
 - Earn Cash, buy first cosmetics
-- Get starter apartment
+- Get starter apartment → upgrade to Apartment
+- Open first Lootboxes from leveling
 - Learn systems through play
 
-### Mid Game (Level 11-30)
+### Mid Game (Level 26-60)
 - Unlock Skilled jobs
-- Upgrade apartment
-- Start earning Anchor items
-- Host first parties
+- Upgrade to Loft → Penthouse
 - Build Fame, climb ranks
+- Host parties
 - Trade with other players
+- Open better Lootboxes, collect rare items
 
-### Late Game (Level 31+)
+### Late Game (Level 61-100)
 - Compete for Fame leaderboard
 - Host premium parties
-- Collect rare items
-- Max out housing
+- Collect rare/legendary items
+- Max out to Mansion housing
 - Become known/recognized
 - Help shape community
 
@@ -153,11 +151,41 @@ PLAY → EARN → SPEND → FLEX → ASPIRE → PLAY
 
 | Document | Contents |
 |----------|----------|
-| [FAME_SYSTEM.md](./FAME_SYSTEM.md) | Fame earning, decay, tiers, incentives |
-| [ECONOMY_SYSTEM.md](./ECONOMY_SYSTEM.md) | Currencies, anchor item, sinks, balance |
-| [JOBS_SYSTEM.md](./JOBS_SYSTEM.md) | Careers, tasks, progression |
-| [HOUSING_SYSTEM.md](./HOUSING_SYSTEM.md) | Apartments, parties, customization |
-| [PROGRESSION_SYSTEM.md](./PROGRESSION_SYSTEM.md) | Levels, unlocks, milestones |
+| [Economy_System.md](./Economy_System.md) | Currencies (Cash, Gems), Lootboxes, trading |
+| [Fame_System.md](./Fame_System.md) | Fame earning, gentle decay, tiers, rewards |
+| [Jobs_System.md](./Jobs_System.md) | Careers, tasks, minigames, progression |
+| [Housing_System.md](./Housing_System.md) | Apartments, parties, furniture, customization |
+| [Progression_System.md](./Progression_System.md) | Levels, unlocks, milestones, achievements |
+
+---
+
+## Key Design Decisions
+
+| Decision | Rationale |
+|----------|-----------|
+| **Dual Currency (Cash + Gems)** | Simple, familiar, no confusion |
+| **Lootboxes as primary rewards** | Exciting, variable, drives engagement |
+| **No premium currency gates** | Housing/jobs use Cash only, fair for all |
+| **Gentle Fame decay** | Respects casual players and real life |
+| **Level cap at 100** | Achievable goal, prestigious to reach |
+| **Cash-only housing** | Everyone can progress, no P2W feel |
+
+---
+
+## Progression Alignment
+
+All systems now use consistent level requirements:
+
+| Level | Housing Unlock | Job Unlock | Fame Tier |
+|-------|---------------|------------|-----------|
+| 1 | Studio (free) | All Entry jobs | Newcomer |
+| 10 | Apartment ($3K) | — | Local |
+| 25 | Loft ($10K) | — | Known |
+| 40 | Penthouse ($30K) | — | Popular |
+| 60 | Mansion ($75K) | — | Celebrity |
+| — | — | — | Star (Fame-based) |
+| — | — | — | Icon (Fame-based) |
+| — | — | — | Legend (Fame-based) |
 
 ---
 
@@ -165,11 +193,11 @@ PLAY → EARN → SPEND → FLEX → ASPIRE → PLAY
 
 | Question | Status |
 |----------|--------|
-| Anchor item name | TBD — needs to feel special |
-| Exact fame decay numbers | Needs playtesting |
-| Job task specifics | Depends on Hytale capabilities |
-| Trading system depth | Secondary feature, design later |
-| Minigame list | Depends on what's fun to build |
+| Final lootbox drop rates | Needs playtesting |
+| Event system details | Design later |
+| Minigame specifics | Depends on Hytale capabilities |
+| Trading system depth | Secondary feature |
+| Live events/concerts | Phase 2+ feature |
 
 ---
 

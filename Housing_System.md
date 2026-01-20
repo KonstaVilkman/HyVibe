@@ -1,7 +1,8 @@
 # Housing System
 
-**Purpose:** Personal space for self-expression, social hosting, and flexing.  
+**Purpose:** Personal space for self-expression, social hosting, and flexing.
 **Status:** Concept Phase
+**Last Updated:** January 2026
 
 ---
 
@@ -11,7 +12,7 @@ Housing is the **endgame flex**. Players grind to upgrade, decorate, and show of
 
 **Key Principles:**
 - Apartments are instanced (private dimensions)
-- Progression through tiers
+- Progression through tiers (Cash only - no currency gates)
 - Decoration is the primary expression
 - Parties turn housing into Fame engines
 
@@ -32,13 +33,13 @@ Housing is the **endgame flex**. Players grind to upgrade, decorate, and show of
 
 ```
 Player enters apartment door
-    â†“
+    ↓
 Server loads that player's instance
-    â†“
+    ↓
 Player appears in their apartment
-    â†“
+    ↓
 Other players can be invited/join
-    â†“
+    ↓
 Leaving returns to shared world
 ```
 
@@ -49,20 +50,22 @@ Leaving returns to shared world
 | Tier | Name | Size | Rooms | Cost | Unlock Requirement |
 |------|------|------|-------|------|-------------------|
 | 1 | Studio | Small | 1 | Free (starter) | New player |
-| 2 | Apartment | Medium | 2-3 | $2,000 + 5 [ANCHOR] | Level 10 |
-| 3 | Loft | Large | 4-5 | $5,000 + 15 [ANCHOR] | Level 20 |
-| 4 | Penthouse | Huge | 6+ | $15,000 + 40 [ANCHOR] | Level 35 |
-| 5 | Mansion | Massive | 10+ | $50,000 + 100 [ANCHOR] | Level 50 |
+| 2 | Apartment | Medium | 2-3 | $3,000 | Level 10 |
+| 3 | Loft | Large | 4-5 | $10,000 | Level 25 |
+| 4 | Penthouse | Huge | 6+ | $30,000 | Level 40 |
+| 5 | Mansion | Massive | 10+ | $75,000 | Level 60 |
+
+**Design Note:** Housing costs are Cash-only. No premium currency gates. Every player can reach every tier through normal play.
 
 ### What Each Tier Unlocks
 
 | Tier | New Features |
 |------|--------------|
-| Studio | Basic furniture, 1 room |
-| Apartment | Multiple rooms, balcony, more slots |
-| Loft | Outdoor space, special furniture |
-| Penthouse | Rooftop, premium slots, party bonuses |
-| Mansion | Ultimate space, unique items only |
+| Studio | Basic furniture, 1 room, 20 item slots |
+| Apartment | Multiple rooms, balcony, 50 item slots |
+| Loft | Outdoor space, special furniture, 100 item slots |
+| Penthouse | Rooftop, premium slots, party bonuses, 150 item slots |
+| Mansion | Ultimate space, unique items only, 250 item slots |
 
 ---
 
@@ -85,11 +88,11 @@ Leaving returns to shared world
 
 | Rarity | Availability | Visual Indicator |
 |--------|--------------|------------------|
-| Common | Cash shop, always | White/gray name |
-| Uncommon | Cash shop, rotating | Green name |
-| Rare | Orb shop, events | Blue name |
-| Epic | Events, crafting | Purple name |
-| Legendary | Rare drops, limited | Orange name |
+| Common | Cash shop, lootboxes | White/gray name |
+| Uncommon | Lootboxes, rotating shop | Green name |
+| Rare | Lootboxes, events | Blue name |
+| Epic | Lootboxes (rare), achievements | Purple name |
+| Legendary | Lootboxes (very rare), events | Orange name |
 | Event | Limited-time only | Special border |
 
 ### Furniture Sets
@@ -127,7 +130,7 @@ Shown on apartment entrance and player profile:
 
 ```
 Apartment Value: 2,847
-â˜…â˜…â˜… Luxurious
+★★★ Luxurious
 ```
 
 | Value Range | Rating |
@@ -181,14 +184,16 @@ When visiting someone's apartment:
 
 | Party Type | Cost | Duration | Max Guests | Fame Multiplier |
 |------------|------|----------|------------|-----------------|
-| Casual Hangout | Free | Unlimited | 10 | 1x (base) |
-| Small Party | 1 [ANCHOR] | 2 hours | 20 | 1.5x |
-| Big Party | 3 [ANCHOR] | 4 hours | 40 | 2x |
-| Mega Party | 10 [ANCHOR] | 8 hours | 100 | 3x |
+| Casual Hangout | Free | Unlimited | 15 | 1x (base) |
+| Small Party | $500 | 2 hours | 25 | 1.5x |
+| Big Party | $2,000 | 4 hours | 50 | 2x |
+| Mega Party | $5,000 | 8 hours | 100 | 3x |
+
+**Design Note:** Party costs are Cash-only. Accessible to all players, scales with apartment tier.
 
 ### How Parties Work
 
-1. Host starts party (pays Anchor if applicable)
+1. Host starts party (pays Cash if applicable)
 2. Party appears in public "Active Parties" list
 3. Players can join from list
 4. Host earns Fame from guest presence/activities
@@ -197,13 +202,17 @@ When visiting someone's apartment:
 
 ### Party Fame Earning (Host)
 
-| Guest Action | Host Fame Earned |
-|--------------|------------------|
-| Guest present (per 5 min) | +1 |
-| Guest plays minigame | +3 |
-| Guest uses interactive furniture | +2 |
-| Guest likes apartment | +5 |
-| Guest invites friend | +2 |
+| Guest Action | Host Fame Earned | With 2x Multiplier |
+|--------------|------------------|-------------------|
+| Guest present (per 5 min) | +1 | +2 |
+| Guest plays minigame | +2 | +4 |
+| Guest uses interactive furniture | +1 | +2 |
+| Guest likes apartment | +5 | +10 |
+| Guest invites friend | +2 | +4 |
+
+**Example:** Big Party (2x multiplier) with 20 guests for 2 hours:
+- 20 guests × 24 intervals (2 hours) × 2 Fame = 960 Fame
+- Plus activity bonuses
 
 ### Why Host Parties?
 
@@ -233,7 +242,7 @@ Players can find apartments through:
 
 ### Featured Apartment Bonus
 
-**Staff Pick:** +500 Fame, special badge for the week
+**Staff Pick:** +500 Fame, special badge for the week, 1 Rare Lootbox
 
 ---
 
@@ -241,16 +250,16 @@ Players can find apartments through:
 
 ```
 New Player
-    â†“
+    ↓
 Starter Studio (Free)
-    â†“
-Level 10 â†’ Unlock Apartment tier (Buy for $/Anchor)
-    â†“
-Level 20 â†’ Unlock Loft tier
-    â†“
-Level 35 â†’ Unlock Penthouse tier
-    â†“
-Level 50 â†’ Unlock Mansion tier
+    ↓
+Level 10 → Unlock Apartment tier ($3,000)
+    ↓
+Level 25 → Unlock Loft tier ($10,000)
+    ↓
+Level 40 → Unlock Penthouse tier ($30,000)
+    ↓
+Level 60 → Unlock Mansion tier ($75,000)
 ```
 
 ### Why Gate By Level?
@@ -269,29 +278,21 @@ Level 50 â†’ Unlock Mansion tier
 | Source | Currency | Availability |
 |--------|----------|--------------|
 | Basic Shop | Cash | Always |
-| Premium Shop | Orbs | Always |
-| Rotating Shop | Cash/Orbs | Daily refresh |
-| Event Shop | Event Tickets | During events |
-| Crafting | Materials + Anchor | Anytime |
-| Drops | Free (rare) | Random from activities |
-| Trading | Cash/Anchor | Player-to-player |
+| Rotating Shop | Cash/Gems | Daily refresh |
+| Lootboxes | Gems (or free from progression) | Always |
+| Event Shop | Event Tokens | During events |
+| Achievements | Free | One-time |
+| Trading | Cash | Player-to-player |
 
-### Crafting Furniture
+### Furniture Price Ranges
 
-Rare furniture can be crafted:
-
-```
-Recipe: Neon Couch (Epic)
-- 5x Fabric (from job/minigame)
-- 3x Neon Tube (from shop)
-- 2x [ANCHOR]
-= Neon Couch
-```
-
-Crafting provides:
-- Anchor sink
-- Goal for collectors
-- Alternative to buying
+| Rarity | Cash Shop Price | Trade Value |
+|--------|-----------------|-------------|
+| Common | $100-300 | $50-200 |
+| Uncommon | $500-1,500 | $300-1,000 |
+| Rare | Not sold (lootbox only) | $2,000-5,000 |
+| Epic | Not sold (lootbox only) | $10,000-25,000 |
+| Legendary | Not sold (lootbox only) | $50,000+ |
 
 ---
 
@@ -299,7 +300,7 @@ Crafting provides:
 
 | Question | Considerations |
 |----------|----------------|
-| Exact tier costs | Needs balancing |
+| Exact tier costs | May need balancing after playtesting |
 | Party duration lengths | 2/4/8 hours feel right? |
 | Max furniture per room | Performance limits? |
 | Outdoor spaces | Gardens, balconies, rooftops? |
@@ -313,11 +314,11 @@ Housing provides:
 - Endgame flex and goal
 - Personal expression space
 - Fame engine through parties
-- Anchor sinks (upgrades, parties)
+- Cash sinks (upgrades, parties)
 - Social visiting/discovery
-- Collection gameplay (furniture)
+- Collection gameplay (furniture from lootboxes)
 
 ---
 
-*See FAME_SYSTEM.md for party hosting bonuses.*  
-*See ECONOMY_SYSTEM.md for furniture costs.*
+*See FAME_SYSTEM.md for party hosting bonuses.*
+*See ECONOMY_SYSTEM.md for furniture costs and lootbox drops.*
