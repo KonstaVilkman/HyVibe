@@ -175,44 +175,49 @@ Making the world feel alive and worth returning to.
 
 ## Development Phases
 
-### Phase 0: Foundation (Current)
-**Goal:** Establish vision, research tools, learn basics
+**Strategy:** Community-first. Get players in early, expand based on feedback.
 
-**Design & Planning:**
+### Phase 0A: Minimum Viable Lobby (Current)
+**Goal:** Something playable to invite people to ASAP
+
+**Design Complete:**
 - [x] Define server concept and pillars
-- [x] Research Hytale monetization policies
 - [x] Create Vision Document
-- [x] Design Economy System (Cash + Gems + Lootboxes)
-- [x] Design Fame System (gentle decay)
-- [x] Design Jobs System (Entry → Skilled progression)
-- [x] Design Housing System (5 tiers, parties)
-- [x] Design Progression System (Level 1-100)
+- [x] Design all core systems
 
-**Learning & Preparation:**
+**Building Now:**
 - [ ] Learn Hytale building tools
-- [ ] Experiment with basic builds
-- [ ] Research scripting/modding capabilities
-- [ ] Identify skill gaps and learning path
-- [ ] Scout potential team members
+- [ ] Build rooftop bar (first spawn area - later connects to city)
+- [ ] Implement levels (5 XP/min passive, no cap)
+- [ ] Implement basic fame foundation (earning + display, no decay yet)
+- [ ] Implement basic profiles (name, level, fame number)
 - [ ] Create Discord community
 
-**Deliverable:** Proof-of-concept build (one small social area)
+**Deliverable:** Rooftop bar where people can hang out (20-50 players)
+
+---
+
+### Phase 0B: First Expansion
+**Goal:** Add first activity based on player feedback
+
+- [ ] One activity (parkour, fishing, or social game)
+- [ ] Basic economy (Cash display, simple shop)
+- [ ] Gather feedback on what players want next
+
+**Deliverable:** Lobby with something to do (50-100 players)
 
 ---
 
 ### Phase 1: Core Loop
-**Goal:** Playable vertical slice with core features
+**Goal:** Full core features
 
-- [ ] Central hub / spawn area with key locations
-- [ ] Basic player housing system (Studio apartments)
-- [ ] One job (Delivery or Fishing)
-- [ ] One minigame (Parkour)
-- [ ] Simple AFK reward system (passive XP)
-- [ ] Basic economy (Cash earning and spending)
-- [ ] First lootbox implementation
+- [ ] Housing system (Studio apartments)
+- [ ] One job (Delivery)
+- [ ] Full fame system with decay
+- [ ] Lootbox system
 - [ ] Server branding (name, logo, color palette)
 
-**Deliverable:** Invite-only alpha for feedback (10-20 testers)
+**Deliverable:** Feature-complete alpha (100+ players)
 
 ---
 

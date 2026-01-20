@@ -40,19 +40,22 @@ This repository contains complete game design documentation. No code or assets e
 
 | Metric | Value |
 |--------|-------|
-| Level Cap | 100 |
+| Level Cap | **None** (infinite) |
 | Housing Tiers | 5 (Studio → Mansion) |
 | Fame Tiers | 8 (Newcomer → Legend) |
 | Lootbox Tiers | 4 (Common → Legendary) |
-| Passive XP | 10 XP/min |
+| Passive XP | 5 XP/min (universal) |
 | Daily Login Fame | +10 |
 | Cash/Hour Target | $800-1,200 |
 
 ## Development Phases
 
-- **Phase 0 (Current):** Design complete, learning Hytale tools, building community
-- **Phase 1:** Core loop - Hub, housing, one job, one minigame, basic economy
-- **Phase 2:** Expansion - Full jobs, minigames, housing tiers, fame, lootboxes
+**Strategy:** Community-first. Get players in early with minimal features, expand based on feedback.
+
+- **Phase 0A (Current):** Basic lobby with levels, fame, profiles - invite first players
+- **Phase 0B:** Add one activity (parkour/fishing), basic economy
+- **Phase 1:** Core loop - Housing, one job, full fame, lootboxes
+- **Phase 2:** Expansion - Full jobs, minigames, housing tiers
 - **Phase 3:** Polish - Onboarding, moderation, achievements, launch prep
 - **Phase 4:** Live Operations - Content updates, events, growth
 

@@ -167,7 +167,8 @@ PLAY → EARN → SPEND → FLEX → ASPIRE → PLAY
 | **Lootboxes as primary rewards** | Exciting, variable, drives engagement |
 | **No premium currency gates** | Housing/jobs use Cash only, fair for all |
 | **Gentle Fame decay** | Respects casual players and real life |
-| **Level cap at 100** | Achievable goal, prestigious to reach |
+| **No level cap** | Let grinders grind, high levels are flex |
+| **5 XP/min passive** | Simple, universal, always progressing |
 | **Cash-only housing** | Everyone can progress, no P2W feel |
 
 ---

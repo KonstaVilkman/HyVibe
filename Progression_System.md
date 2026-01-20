@@ -33,11 +33,15 @@ Progression is about **giving players reasons to keep playing**. Every action sh
 
 ## Player Level
 
+### No Level Cap
+
+**Players can grind as much as they want.** There is no maximum level. High levels become a flex and show dedication.
+
 ### How You Earn XP
 
 | Source | XP Amount | Notes |
 |--------|-----------|-------|
-| Time online (passive) | +10 XP/min | Always earning while online |
+| Time online (passive) | +5 XP/min | Always earning while online |
 | Job task (Entry) | +15 XP | Active work |
 | Job task (Skilled) | +25 XP | Better jobs = more XP |
 | Minigame played | +20-40 XP | Participation |
@@ -46,33 +50,34 @@ Progression is about **giving players reasons to keep playing**. Every action sh
 | Achievement unlocked | +100-500 XP | One-time spikes |
 | Event participation | +50-200 XP | Engagement reward |
 
-**Passive XP:** All players earn 10 XP per minute just for being online. This ensures you're always working toward the next level whether active, idle, or AFK.
+**Passive XP:** All players earn 5 XP per minute just for being online. Simple and universal - no special zones required.
 
 ### XP Curve
 
-| Level Range | XP Per Level | Total XP to Reach End |
-|-------------|--------------|----------------------|
-| 1-10 | 500 | 5,000 |
-| 11-25 | 750 | 16,250 |
-| 26-40 | 1,000 | 31,250 |
-| 41-60 | 1,500 | 61,250 |
-| 61-80 | 2,000 | 101,250 |
-| 81-100 | 2,500 | 151,250 |
+| Level Range | XP Per Level | Notes |
+|-------------|--------------|-------|
+| 1-10 | 500 | Fast early progress |
+| 11-25 | 750 | Still accessible |
+| 26-50 | 1,000 | Steady climb |
+| 51-100 | 1,500 | Committed players |
+| 101-200 | 2,000 | Dedicated grinders |
+| 201-500 | 2,500 | True veterans |
+| 501+ | 3,000 | Legends |
 
 ### Level Time Estimates
 
-Based on 10 XP/min idle + active play bonuses (avg ~800-1,200 XP/hour):
+Based on 5 XP/min passive + active play (avg ~500-800 XP/hour):
 
 | Level | Approx. Time | Playstyle |
 |-------|--------------|-----------|
-| 10 | 4-6 hours | New player milestone |
-| 25 | 15-20 hours | First week player |
-| 40 | 30-40 hours | Regular player |
-| 60 | 60-80 hours | Committed player |
-| 80 | 100-130 hours | Dedicated player |
-| 100 | 150-200 hours | Veteran |
+| 10 | 6-10 hours | New player milestone |
+| 25 | 20-30 hours | First week player |
+| 50 | 50-70 hours | Regular player |
+| 100 | 120-160 hours | Committed player |
+| 200 | 300-400 hours | Dedicated grinder |
+| 500 | 1,000+ hours | Legend status |
 
-**Reality Check:** A player logging 2 hours/day reaches Level 40 in 2-3 weeks, Level 100 in 3-4 months. Achievable for casual players.
+**No Cap Philosophy:** Let players grind. High levels become meaningful status symbols. Someone at Level 500+ has serious dedication.
 
 ---
 
@@ -87,28 +92,36 @@ Based on 10 XP/min idle + active play bonuses (avg ~800-1,200 XP/hour):
 | 10 | Apartment Tier 2 available ($3,000), first cosmetic set |
 | 15 | All minigames unlocked, title customization |
 | 20 | First achievement tier complete bonus |
-| 25 | Loft Tier 3 available ($10,000), VIP area access option |
+| 25 | Loft Tier 3 available ($10,000) |
 
 ### Mid Game (26-60)
 
 | Level | Unlock |
 |-------|--------|
-| 30 | Advanced crafting recipes, exclusive emotes |
+| 30 | Exclusive emotes |
 | 35 | Elite cosmetic tier access |
 | 40 | Penthouse Tier 4 available ($30,000), "Veteran" badge |
-| 45 | Prestige cosmetics, special particles |
-| 50 | "Dedicated" badge, premium housing options |
-| 55 | Master-tier furniture unlocked |
+| 50 | "Dedicated" badge |
 | 60 | Mansion Tier 5 available ($75,000), "Champion" title |
 
 ### Late Game (61-100)
 
 | Level | Unlock |
 |-------|--------|
-| 70 | "Elite" title, exclusive district access |
-| 80 | "Master" title, unique visual effects |
-| 90 | "Grandmaster" title, prestige housing |
-| 100 | "Legend" title, personal monument, exclusive 100 club |
+| 75 | "Elite" title |
+| 100 | "Centurion" title, special particle effect |
+
+### Grinder Tiers (100+)
+
+| Level | Unlock |
+|-------|--------|
+| 150 | "Master" title |
+| 200 | "Grandmaster" title, unique visual effect |
+| 300 | "Legend" title |
+| 500 | "Mythic" title, permanent recognition |
+| 1000 | "Immortal" title, monument in city |
+
+**Beyond 1000:** Levels continue infinitely. Bragging rights only - the number itself is the flex.
 
 ---
 
@@ -143,29 +156,43 @@ Based on 10 XP/min idle + active play bonuses (avg ~800-1,200 XP/hour):
 | Level | Cash | Gems | Lootbox | Special |
 |-------|------|------|---------|---------|
 | 65 | $12,000 | 225 | Epic | — |
-| 70 | $15,000 | 250 | Legendary | Elite Title |
-| 75 | $18,000 | 275 | Epic | — |
-| 80 | $22,000 | 300 | Legendary | Master Title + Effect |
+| 70 | $15,000 | 250 | Epic | — |
+| 75 | $18,000 | 275 | Legendary | Elite Title |
+| 80 | $22,000 | 300 | Epic | — |
 | 85 | $26,000 | 350 | Epic | — |
-| 90 | $30,000 | 400 | Legendary | Grandmaster Title |
-| 95 | $35,000 | 450 | Legendary | — |
-| 100 | $50,000 | 600 | 2x Legendary | Legend Title + Monument |
+| 90 | $30,000 | 400 | Epic | — |
+| 95 | $35,000 | 450 | Epic | — |
+| 100 | $50,000 | 600 | Legendary | Centurion Title |
+
+### Levels 100+ (Every 50 Levels)
+
+| Level | Cash | Gems | Lootbox | Special |
+|-------|------|------|---------|---------|
+| 150 | $75,000 | 800 | Legendary | Master Title |
+| 200 | $100,000 | 1,000 | 2x Legendary | Grandmaster Title |
+| 250 | $125,000 | 1,200 | Legendary | — |
+| 300 | $150,000 | 1,500 | 2x Legendary | Legend Title |
+| 400 | $200,000 | 2,000 | 2x Legendary | — |
+| 500 | $300,000 | 3,000 | 3x Legendary | Mythic Title |
+| 1000 | $1,000,000 | 10,000 | 5x Legendary | Immortal Title + Monument |
+
+**Beyond 1000:** Every 100 levels grants a Legendary Lootbox + scaling Cash/Gems.
 
 ---
 
-## Passive Progression & Bonuses
+## Passive Progression
 
 ### Base Passive XP
 
-**Everyone earns 10 XP/min while online. No strings attached.**
+**Everyone earns 5 XP/min while online. No strings attached.**
 
-- Active playing? +10 XP/min
-- Standing still? +10 XP/min
-- AFK in your apartment? +10 XP/min
+- Active playing? +5 XP/min
+- Standing still? +5 XP/min
+- AFK anywhere? +5 XP/min
 
-**Philosophy:** Your time matters. Whether you're grinding or chatting with friends, you're progressing.
+**Philosophy:** Your time matters. Whether you're grinding or chatting with friends, you're progressing. No special zones needed - just be online.
 
-### Bonus Multipliers (From Gear/Items)
+### Optional: Bonus Multipliers (From Gear/Items)
 
 Players can boost their XP gain through equipment:
 
@@ -173,30 +200,14 @@ Players can boost their XP gain through equipment:
 |-----------|-----------|----------|
 | Outfit | +10% XP | One equipped |
 | Pet | +5% XP | One active |
-| Furniture (home) | +5% XP | While in apartment |
-| **Total Cap** | **+20% XP** | Cannot exceed |
+| **Total Cap** | **+15% XP** | Cannot exceed |
 
 **Example:**
-- Base: 10 XP/min = 600 XP/hour
-- With +20% gear: 12 XP/min = 720 XP/hour
+- Base: 5 XP/min = 300 XP/hour
+- With +15% gear: 5.75 XP/min = 345 XP/hour
 - Doing jobs/minigames on top? Even faster
 
 **No Power Creep:** These percentages are LOCKED. Future items have the same caps, just different aesthetics.
-
----
-
-## AFK Zones
-
-**Designated chill spots with bonus idle rewards:**
-
-| Zone | Bonus | Requirements |
-|------|-------|--------------|
-| Park Benches | +2 XP/min | None |
-| Rooftop Lounge | +3 XP/min | Level 20+ |
-| VIP Lounge | +5 XP/min | Fame: Celebrity+ |
-| Zen Garden | +3 XP/min + $5/min Cash | Level 30+ |
-
-**Note:** AFK zone bonuses stack with gear bonuses. A max-geared player in VIP Lounge earns 15+3 XP/min = 18 XP/min (1,080/hour) while AFK.
 
 ---
 
@@ -354,10 +365,9 @@ Larger goals with better rewards:
 | Question | Considerations |
 |----------|----------------|
 | Exact XP numbers | Needs playtesting for feel |
-| Post-100 progression? | Prestige system? Extended levels? |
 | Season pass at launch? | Later feature? |
-| Milestone reward balance | Exciting enough at all stages? |
-| AFK zone variety | More zones with different bonuses? |
+| Milestone reward scaling | Are high-level rewards exciting enough? |
+| Level display format | Show exact level or use tiers for very high levels? |
 
 ---
 
