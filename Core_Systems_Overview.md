@@ -96,8 +96,8 @@ PLAY → EARN → SPEND → FLEX → ASPIRE → PLAY
 │                                                         │
 │  EARNING FAME                      FAME BENEFITS        │
 │                                                         │
-│  ┌─────────────┐                 ┌─────────────┐       │
-│  │Host Parties │────────────────▶│Hosting Bonus│       │
+│  ┌─────────────┐                 ┌─────────────┐        │
+│  │Host Parties │───────────────▶│ Hosting Bonus│       │
 │  │Get Visits   │                 │(% of guest  │       │
 │  │Win Games    │                 │ earnings)   │       │
 │  │Complete Jobs│                 └─────────────┘       │
@@ -106,7 +106,7 @@ PLAY → EARN → SPEND → FLEX → ASPIRE → PLAY
 │         │                        │Title/Rank   │       │
 │         ▼                        │Display      │       │
 │  ┌─────────────┐                 └─────────────┘       │
-│  │ FAME TOTAL  │────────────────▶                      │
+│  │ FAME TOTAL  │────────────────▶                     │
 │  └──────┬──────┘                 ┌─────────────┐       │
 │         │                        │Leaderboard  │       │
 │         │   DECAY                │Position     │       │
