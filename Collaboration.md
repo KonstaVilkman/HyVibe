@@ -1,14 +1,15 @@
 # Collaboration
 
 Tracking potential collaborators, contributors, and outreach status for HyVibe.
+Adding existing mods with permission from the Author's or potential full team members
 
 ---
 
 ## Potential Collaborators
 
-| Creator | Work | Link | Status |
-|---------|------|------|--------|
-| Arclowpoly | Chess Props (3D models) | [Chess Props v1](https://www.curseforge.com/hytale/mods/chess-props-v1) | Pending outreach |
+| Creator | Work | Status |
+|---------|------|--------|
+| Arclowpoly | 3D Modeler | Open to commissions |
 
 ---
 
@@ -16,7 +17,7 @@ Tracking potential collaborators, contributors, and outreach status for HyVibe.
 
 People to contact about potential collaboration:
 
-- [ ] **Arclowpoly** - Ask about joining the project (chess piece models)
+- [x] **Arclowpoly** - Contacted, not joining but open to commissions
 
 ---
 
