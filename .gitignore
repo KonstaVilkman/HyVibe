@@ -1,5 +1,6 @@
 # Personal development/learning folder
 _personal/
+.vscode
 
 # Claude Code configuration
 .claude/
