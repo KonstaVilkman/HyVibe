@@ -4,16 +4,39 @@
 
 ---
 
-## Areas
+## Locations
 
-*Areas to be documented as they are built.*
+| Location | Phase | Status | Description |
+|----------|-------|--------|-------------|
+| [Penthouse Bar](Penthouse_Bar.md) | 0A | Design | Main spawn point and social hub |
+| Central Hub / Plaza | TBD | Planned | Future expansion |
+| Themed Districts | TBD | Planned | Future expansion |
+| Public Venues | TBD | Planned | Future expansion |
 
-### Planned Locations
+---
 
-- Central Hub / Plaza
-- Penthouse Bar (Phase 0A spawn)
-- Themed Districts
-- Public Venues
+## NPCs
+
+See [NPCs/_Overview.md](NPCs/_Overview.md) for all NPC documentation.
+
+| NPC | Location | Purpose |
+|-----|----------|---------|
+| [Shop NPC](NPCs/Shop_NPC.md) | Penthouse Bar | General store |
+| [Black Market Dealer](NPCs/Black_Market_Dealer.md) | Random spawns | Secret deals |
+
+---
+
+## World Structure
+
+```
+World/
+├── _Overview.md          ← You are here
+├── Penthouse_Bar.md      ← Main hub documentation
+└── NPCs/
+    ├── _Overview.md      ← NPC index
+    ├── Shop_NPC.md       ← General shop
+    └── Black_Market_Dealer.md  ← Secret vendor
+```
 
 ---
 
