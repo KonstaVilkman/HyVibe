@@ -28,8 +28,8 @@ Looking for contributors!
 | Role | Members |
 |------|---------|
 | **Developers** | Kapsi |
-| **Builder** | Kapsi |
 | **3D Artists** | Kapsi |
+| **Builders** | Kapsi |
 
 ---
 
