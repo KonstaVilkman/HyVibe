@@ -152,29 +152,48 @@ You are here to make the project smarter, calmer, and more resilient—not bigge
 
 ## Economy Model
 
-**Dual Currency + Lootboxes:**
+**Dual Currency + Crystals + Lootboxes:**
 
 | Currency | Role | Tradeable? |
 |----------|------|------------|
 | **Cash ($)** | Common currency for everyday purchases | Yes |
 | **Gems** | Premium currency for lootboxes | No |
+| **Crystals** | Economy anchor, party hosting, housing features | Yes |
 | **Lootboxes** | Primary reward vehicle (cosmetics, furniture, pets) | No |
 
-**Key Design Decision:** Housing and job unlocks use Cash only. No premium currency gates.
+**Key Design Decision:** Housing and job unlocks use Cash only. Crystals used for parties and premium housing features.
 
 ## Documentation Structure
 
-| Document | Purpose |
-|----------|---------|
-| [VISION_DOCUMENT.md](VISION_DOCUMENT.md) | Overall vision, target audience, core pillars, monetization |
-| [Development_Path.md](Development_Path.md) | Roadmap from current state to launch |
-| [Phase_0A_Minimum_Viable_Lobby.md](Phase_0A_Minimum_Viable_Lobby.md) | **Active phase** - detailed MVP plan, setup guides |
-| [Core_Systems_Overview.md](Core_Systems_Overview.md) | How all systems connect (the core loop) |
-| [Economy_System.md](Economy_System.md) | Cash, Gems, Lootboxes, trading |
-| [Fame_System.md](Fame_System.md) | Social status with gentle decay |
-| [Jobs_System.md](Jobs_System.md) | Task-based careers, minigames |
-| [Housing_System.md](Housing_System.md) | Instanced apartments, furniture, parties |
-| [Progression_System.md](Progression_System.md) | XP, levels 1-100, milestones |
+```
+HyVibe/
+├── Vision/                    ← Why we're building this
+│   └── Vision_Document.md
+├── Development/               ← How we're building this
+│   ├── Development_Path.md
+│   ├── Phase_0A_Minimum_Viable_Lobby.md
+│   ├── Hytale_Research_2026.md
+│   └── Daily_Plans/
+├── Systems/                   ← Game mechanics
+│   ├── Economy_System.md
+│   ├── Fame_System.md
+│   ├── Jobs_System.md
+│   ├── Housing_System.md
+│   └── Progression_System.md
+├── Items/                     ← All item categories
+│   ├── Cosmetics/, Furniture/, Pets/, Emotes/
+│   ├── Titles/, Badges/, Particles/, Name_Effects/
+│   └── Plant_Seeds/, Crystals/
+└── World/                     ← Locations & areas
+```
+
+| Folder | Purpose |
+|--------|---------|
+| [Vision/](Vision/_Overview.md) | Overall vision, target audience, core pillars |
+| [Development/](Development/_Overview.md) | Roadmap, phases, daily plans |
+| [Systems/](Systems/_Overview.md) | All game mechanics (economy, fame, jobs, housing, progression) |
+| [Items/](Items/_Overview.md) | Item categories (cosmetics, furniture, pets, etc.) |
+| [World/](World/_Overview.md) | World areas and locations |
 
 ## Key Numbers (Quick Reference)
 
