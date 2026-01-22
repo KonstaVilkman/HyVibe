@@ -1,18 +1,18 @@
 # HyVibe
 
-**A cozy social/hangout Hytale server where players relax, roleplay, customize their space, and build meaningful connections.**
+A social Hytale server focused on hanging out, housing, and collecting cool stuff. No pay-to-win.
 
 ---
 
 ## Quick Links
 
-| Section | Description |
-|---------|-------------|
-| [Vision](Vision/_Overview.md) | Project vision, core pillars, target audience |
-| [Development](Development/_Overview.md) | Roadmap, phases, daily plans |
-| [Systems](Systems/_Overview.md) | Game mechanics (Economy, Fame, Jobs, Housing, Progression) |
-| [Items](Items/_Overview.md) | All item categories (Cosmetics, Furniture, Pets, etc.) |
-| [World](World/_Overview.md) | World areas, NPCs |
+| Folder | What's in it |
+|--------|--------------|
+| [Vision](Vision/_Overview.md) | Why we're building this |
+| [Development](Development/_Overview.md) | Roadmap and progress |
+| [Systems](Systems/_Overview.md) | Economy, Fame, Jobs, Housing |
+| [Items](Items/_Overview.md) | Cosmetics, Furniture, Pets, etc. |
+| [World](World/_Overview.md) | Locations and NPCs |
 
 ---
 
@@ -24,7 +24,7 @@
 | **Hytale Status** | Early Access | Jan 13, 2026 |
 
 ## Team
-## We are looking for Team members and contributors
+Looking for contributors!
 | Role | Members |
 |------|---------|
 | **Developers** | Kapsi |
@@ -36,7 +36,7 @@
 ## Development Plan
 
 ### Phase 1: Working Prototype
-> Get a playable lobby with stock Hytale assets
+Get something playable - lobby with mostly stock assets
 
 | Task | Status |
 |------|--------|
@@ -49,16 +49,17 @@
 | Minigames | `PLANNED` |
 
 ### Phase 2: Custom Features
-> Add HyVibe-specific systems via Java plugins
+Java plugins for the HyVibe-specific stuff
 
 | System | Status |
 |--------|--------|
+| Emote syncing | `PLANNED` |
 | Fame System | `DESIGNED` |
 | Player Profiles | `DESIGNED` |
 | Shop NPCs | `DESIGNED` |
 
 ### Phase 3: Core Loop
-> Housing, Jobs, Lootboxes — the main gameplay
+Housing, jobs, lootboxes - the actual gameplay loop
 
 | System | Status |
 |--------|--------|
@@ -67,7 +68,7 @@
 | Lootboxes | `DESIGNED` |
 
 ### Phase 4: Content & Polish
-> Expand world, add activities, prepare for launch
+More locations, events, then launch
 
 | Task | Status |
 |------|--------|
@@ -77,64 +78,34 @@
 
 ---
 
-**Legend:** `DONE` · `IN PROGRESS` · `SKETCHING` · `DESIGNED` · `NOT STARTED` · `PLANNED`
+`DONE` · `IN PROGRESS` · `SKETCHING` · `DESIGNED` · `NOT STARTED` · `PLANNED`
 
 ---
 
-## Core Promise
+## The Promise
 
-> **A trusted, non-pay-to-win social platform where your time investment is always respected.**
+No pay-to-win. Your time here actually counts for something.
 
 ---
 
-## Documentation Structure
+## Repo Structure
 
 ```
 HyVibe/
-├── README.md              ← You are here
-├── CLAUDE.md              ← AI assistant instructions
-│
-├── Vision/                ← Why we're building this
-│   ├── _Overview.md
-│   └── Vision_Document.md
-│
-├── Development/           ← How we're building this
-│   ├── _Overview.md
-│   ├── Development_Path.md
-│   ├── Phase_0A_Minimum_Viable_Lobby.md
-│   ├── Hytale_Research_2026.md
-│   └── Daily_Plans/
-│
-├── Systems/               ← Game mechanics
-│   ├── _Overview.md
-│   ├── Economy_System.md
-│   ├── Fame_System.md
-│   ├── Jobs_System.md
-│   ├── Housing_System.md
-│   └── Progression_System.md
-│
-├── Items/                 ← All item categories
-│   ├── _Overview.md
-│   ├── Cosmetics/
-│   ├── Furniture/
-│   ├── Pets/
-│   ├── Emotes/
-│   ├── Titles/
-│   ├── Badges/
-│   ├── Particles/
-│   ├── Name_Effects/
-│   ├── Plant_Seeds/
-│   └── Crystals/
-│
-└── World/                 ← Locations & areas
-    └── _Overview.md
+├── Vision/        - the "why"
+├── Development/   - roadmap & progress
+├── Systems/       - game mechanics docs
+├── Items/         - cosmetics, furniture, etc.
+└── World/         - locations & NPCs
 ```
 
 ---
 
-## Contributing
+## Join Us
 
-This is a solo project in early development. If you're interested in contributing or have feedback, reach out through the community Discord: https://discord.gg/fj6ccfyWhK.
+Solo project for now but looking for help. If you're into Hytale and want to build something cool, come hang out.
+
+Discord: https://discord.gg/fj6ccfyWhK
 
 ---
 

@@ -17,7 +17,7 @@ A social sandbox platform built on Hytale, designed for players who want to chil
 
 ## Vision Statement
 
-> *"A place that feels like home — where you can be yourself, meet friends, and always have something chill to do."*
+> *"A place that feels like home, where you can be yourself, meet friends, and always have something chill to do."*
 
 ---
 

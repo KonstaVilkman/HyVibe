@@ -37,6 +37,10 @@ Fame measures how **known** and **active** a player is. It's not a currency — 
 | Action | Fame Gained | Notes |
 |--------|-------------|-------|
 | Daily login | +10 | Shows up every day |
+| **Emote sync (2 players)** | +1 | Click someone's emote to join |
+| **Emote sync (3-5 players)** | +2 | Group emotes |
+| **Emote sync (6-10 players)** | +3 | Dance floor moments |
+| **Emote sync (11+ players)** | +5 | Flash mob energy |
 | Someone visits your apartment | +2 | Encourages good apartments |
 | Someone likes your apartment | +5 | Quality over quantity |
 | Hosting party (per guest per 5 min) | +1-3 | Core fame engine (scales with party tier, requires Crystals) |
@@ -46,6 +50,8 @@ Fame measures how **known** and **active** a player is. It's not a currency — 
 | Entertainment job task | +2-3 | Social jobs give more |
 | Achievement unlocked | +10-50 | Milestone spikes |
 | Event participation | +10-30 | Engagement reward |
+
+*Emote sync Fame has a cooldown - only triggers once per emote session to prevent spam.*
 
 **Design Note:** Fame sources are varied so players can earn through different playstyles.
 
@@ -264,7 +270,7 @@ When you host a party, you earn a percentage of what guests earn:
 
 Fame rewards players who:
 - Show up consistently (daily login helps!)
-- Create social value (parties, good apartments)
+- Create social value (parties, good apartments, emote syncing)
 - Engage with multiple systems
 - Maintain activity without burnout
 
