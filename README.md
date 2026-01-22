@@ -24,7 +24,7 @@
 | **Hytale Status** | Early Access | Jan 13, 2026 |
 
 ## Team
-## We are looking for 
+## We are looking for Team members and contributors
 | Role | Members |
 |------|---------|
 | **Developers** | Kapsi |
