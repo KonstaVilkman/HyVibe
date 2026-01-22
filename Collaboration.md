@@ -18,7 +18,7 @@ Adding existing mods with permission from the Author's or potential full team me
 People to contact about potential collaboration:
 
 - [x] **Arclowpoly** - Contacted, not joining but open to commissions
-
+- [ ] **Bytensalad** - Found my White Monster energy drink project and was willing to help with the model after their exams. Waiting for him to contact me after his exams.
 ---
 
 ## Notes
