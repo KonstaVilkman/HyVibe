@@ -263,7 +263,7 @@ Reward: Unique cosmetics, Epic Lootbox, bragging rights
 
 ```
 Fish Collection: 12/25 Complete
-[████████████░░░░░░░░░░░░░] 48%
+[############.............] 48%
 
 Reward at 100%: Golden Aquarium + "Master Angler" title + Epic Lootbox
 ```
@@ -425,7 +425,7 @@ Login streaks reward **consistency over intensity**. Just show up each day to bu
 
 ---
 
-*See FAME_SYSTEM.md for Fame progression.*
-*See JOBS_SYSTEM.md for career progression.*
-*See HOUSING_SYSTEM.md for apartment progression.*
-*See ECONOMY_SYSTEM.md for Lootbox system details.*
+*See [Fame_System.md](Fame_System.md) for Fame progression.*
+*See [Jobs_System.md](Jobs_System.md) for career progression.*
+*See [Housing_System.md](Housing_System.md) for apartment progression.*
+*See [Economy_System.md](Economy_System.md) for Lootbox system details.*

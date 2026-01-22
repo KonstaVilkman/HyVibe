@@ -150,11 +150,11 @@ Day 3: Earns 90 fame — HIT = 8,270
 
 Instead of: `Fame: 47,832`
 
-Show: `★★ Star #12`
+Show: `** Star #12`
 
 | Component | Meaning |
 |-----------|---------|
-| ★★ | Tier icon |
+| ** | Tier icon |
 | Star | Tier name |
 | #12 | Leaderboard position within tier (or global) |
 
@@ -162,14 +162,14 @@ Show: `★★ Star #12`
 
 | Fame Range | Title | Icon |
 |------------|-------|------|
-| 0 - 999 | Newcomer | · |
-| 1,000 - 2,999 | Local | ○ |
-| 3,000 - 5,999 | Known | ● |
-| 6,000 - 11,999 | Popular | ◆ |
-| 12,000 - 24,999 | Celebrity | ★ |
-| 25,000 - 49,999 | Star | ★★ |
-| 50,000 - 99,999 | Icon | ★★★ |
-| 100,000+ | Legend | ✦ |
+| 0 - 999 | Newcomer | . |
+| 1,000 - 2,999 | Local | o |
+| 3,000 - 5,999 | Known | * |
+| 6,000 - 11,999 | Popular | + |
+| 12,000 - 24,999 | Celebrity | # |
+| 25,000 - 49,999 | Star | ** |
+| 50,000 - 99,999 | Icon | *** |
+| 100,000+ | Legend | @ |
 
 ### Tier Promotion Rewards
 
@@ -218,7 +218,7 @@ When you host a party, you earn a percentage of what guests earn:
 | Icon (50,000) | Legacy cosmetics, permanent recognition |
 | Legend (100,000) | Ultimate flex items, monument in city |
 
-**Note:** Boosted parties require both Cash AND Crystals. Casual Hangouts remain free for all players. See Housing_System.md for full party details.
+**Note:** Boosted parties require both Cash AND Crystals. Casual Hangouts remain free for all players. See [Housing_System.md](Housing_System.md) for full party details.
 
 ---
 
@@ -275,5 +275,5 @@ Fame is gentle to:
 
 ---
 
-*See ECONOMY_SYSTEM.md for how Fame interacts with currencies.*
-*See HOUSING_SYSTEM.md for party hosting details.*
+*See [Economy_System.md](Economy_System.md) for how Fame interacts with currencies.*
+*See [Housing_System.md](Housing_System.md) for party hosting details.*

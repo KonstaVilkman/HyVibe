@@ -125,7 +125,7 @@ Crystals drop from **lootboxes only** — they cannot be purchased directly or e
 ### Spending Crystals
 
 | Sink | Cost (Crystals) | Frequency | Purpose |
-|------|-----------------|-----------|---------|
+|------|-----------------|-----------| --------|
 | **Small Party** | 1 | Recurring | Entry-level hosting |
 | **Big Party** | 2 | Recurring | Standard hosting |
 | **Mega Party** | 4 | Recurring | Event-style hosting |
@@ -263,7 +263,7 @@ Lootboxes contain items from these categories:
 | Epic Seed | 72 hours | 1 Epic Lootbox |
 | Super Seed | 72 hours | 1 Epic + chance for 1-2 bonus boxes (any rarity) |
 
-*See Housing_System.md for plant slot details.*
+*See [Housing_System.md](Housing_System.md) for plant slot details.*
 
 **Shop Purchase:**
 
@@ -279,38 +279,38 @@ Lootboxes contain items from these categories:
 ## Economy Flow Diagram
 
 ```
-┌──────────────────────────────────────────────────────────────────┐
-│                        EARNING SOURCES                            │
-├──────────────────────────────────────────────────────────────────┤
-│                                                                   │
-│  ┌─────────┐  ┌─────────┐  ┌─────────┐  ┌─────────┐  ┌────────┐ │
-│  │  JOBS   │  │MINIGAMES│  │ LOGIN   │  │ EVENTS  │  │ PLANTS │ │
-│  │         │  │         │  │ STREAK  │  │         │  │        │ │
-│  └────┬────┘  └────┬────┘  └────┬────┘  └────┬────┘  └───┬────┘ │
-│       │            │            │            │            │      │
-│       ▼            ▼            ▼            ▼            ▼      │
-│  ┌────────────────────────────────────────────────────────────┐ │
-│  │                    PLAYER INVENTORY                         │ │
-│  │  Cash: $$$        Gems: ◇◇◇        Crystals: ⬡⬡⬡          │ │
-│  └────────────────────────────────────────────────────────────┘ │
-│       │                    │                    │                │
-│       ▼                    ▼                    ▼                │
-├──────────────────────────────────────────────────────────────────┤
-│                        SPENDING SINKS                             │
-├──────────────────────────────────────────────────────────────────┤
-│                                                                   │
-│  ┌─────────┐  ┌─────────┐  ┌─────────┐  ┌─────────┐  ┌────────┐ │
-│  │COSMETICS│  │ HOUSING │  │LOOTBOXES│  │ PARTIES │  │TRADING │ │
-│  │  (Cash) │  │  (Cash) │  │ (Gems)  │  │(Crystal)│  │ (All)  │ │
-│  └─────────┘  └─────────┘  └─────────┘  └─────────┘  └────────┘ │
-│                                                                   │
-│                    ┌─────────────────────┐                       │
-│                    │  HOUSING FEATURES   │                       │
-│                    │     (Crystals)      │                       │
-│                    │ Balcony, Secret Room│                       │
-│                    └─────────────────────┘                       │
-│                                                                   │
-└──────────────────────────────────────────────────────────────────┘
++----------------------------------------------------------------------+
+|                        EARNING SOURCES                                |
++----------------------------------------------------------------------+
+|                                                                       |
+|  +---------+  +---------+  +---------+  +---------+  +--------+      |
+|  |  JOBS   |  |MINIGAMES|  | LOGIN   |  | EVENTS  |  | PLANTS |      |
+|  |         |  |         |  | STREAK  |  |         |  |        |      |
+|  +----+----+  +----+----+  +----+----+  +----+----+  +---+----+      |
+|       |            |            |            |            |           |
+|       v            v            v            v            v           |
+|  +--------------------------------------------------------------------+
+|  |                    PLAYER INVENTORY                                |
+|  |  Cash: $$$        Gems: ***        Crystals: +++                  |
+|  +--------------------------------------------------------------------+
+|       |                    |                    |                     |
+|       v                    v                    v                     |
++----------------------------------------------------------------------+
+|                        SPENDING SINKS                                 |
++----------------------------------------------------------------------+
+|                                                                       |
+|  +---------+  +---------+  +---------+  +---------+  +--------+      |
+|  |COSMETICS|  | HOUSING |  |LOOTBOXES|  | PARTIES |  |TRADING |      |
+|  |  (Cash) |  |  (Cash) |  | (Gems)  |  |(Crystal)|  | (All)  |      |
+|  +---------+  +---------+  +---------+  +---------+  +--------+      |
+|                                                                       |
+|                    +---------------------+                            |
+|                    |  HOUSING FEATURES   |                            |
+|                    |     (Crystals)      |                            |
+|                    | Balcony, Secret Room|                            |
+|                    +---------------------+                            |
+|                                                                       |
++----------------------------------------------------------------------+
 ```
 
 ---
@@ -415,6 +415,6 @@ If monetization is enabled:
 
 ---
 
-*See FAME_SYSTEM.md for Fame milestone rewards.*
-*See JOBS_SYSTEM.md for earning rates by job.*
-*See HOUSING_SYSTEM.md for apartment costs.*
+*See [Fame_System.md](Fame_System.md) for Fame milestone rewards.*
+*See [Jobs_System.md](Jobs_System.md) for earning rates by job.*
+*See [Housing_System.md](Housing_System.md) for apartment costs.*

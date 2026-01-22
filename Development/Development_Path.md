@@ -162,11 +162,11 @@
 
 | Component | Phase 0A | Full System (Later) |
 |-----------|----------|---------------------|
-| Fame score | ✓ Just a number | Tiers, titles, icons |
-| Earning | ✓ Time online, login | Parties, visits, jobs |
-| Display | ✓ Show in profile | Leaderboards, badges |
-| Decay | ✗ Not yet | Gentle threshold decay |
-| Benefits | ✗ Not yet | Hosting bonus, unlocks |
+| Fame score | Just a number | Tiers, titles, icons |
+| Earning | Time online, login | Parties, visits, jobs |
+| Display | Show in profile | Leaderboards, badges |
+| Decay | Not yet | Gentle threshold decay |
+| Benefits | Not yet | Hosting bonus, unlocks |
 
 ### Fame Earning (Phase 0A)
 
@@ -274,7 +274,7 @@ Pick ONE thing to add:
 - Design doc snippets
 - "Coming soon" teasers
 - Behind-the-scenes decisions
-- Polls ("What should we name the café?")
+- Polls ("What should we name the cafe?")
 
 ---
 

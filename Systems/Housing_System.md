@@ -33,13 +33,13 @@ Housing is the **endgame flex**. Players grind to upgrade, decorate, and show of
 
 ```
 Player enters apartment door
-    ↓
+    |
 Server loads that player's instance
-    ↓
+    |
 Player appears in their apartment
-    ↓
+    |
 Other players can be invited/join
-    ↓
+    |
 Leaving returns to shared world
 ```
 
@@ -145,7 +145,7 @@ Shown on apartment entrance and player profile:
 
 ```
 Apartment Value: 2,847
-★★★ Luxurious
+*** Luxurious
 ```
 
 | Value Range | Rating |
@@ -283,7 +283,7 @@ When visiting someone's apartment:
 | Guest invites friend | +2 | +4 |
 
 **Example:** Big Party (2x multiplier) with 20 guests for 2 hours:
-- 20 guests × 24 intervals (2 hours) × 2 Fame = 960 Fame
+- 20 guests x 24 intervals (2 hours) x 2 Fame = 960 Fame
 - Plus activity bonuses
 
 ### Why Host Parties?
@@ -322,16 +322,16 @@ Players can find apartments through:
 
 ```
 New Player
-    ↓
+    |
 Starter Studio (Free)
-    ↓
-Level 10 → Unlock Apartment tier ($3,000)
-    ↓
-Level 25 → Unlock Loft tier ($10,000)
-    ↓
-Level 40 → Unlock Penthouse tier ($30,000)
-    ↓
-Level 60 → Unlock Mansion tier ($75,000)
+    |
+Level 10 -> Unlock Apartment tier ($3,000)
+    |
+Level 25 -> Unlock Loft tier ($10,000)
+    |
+Level 40 -> Unlock Penthouse tier ($30,000)
+    |
+Level 60 -> Unlock Mansion tier ($75,000)
 ```
 
 ### Why Gate By Level?
@@ -392,5 +392,5 @@ Housing provides:
 
 ---
 
-*See FAME_SYSTEM.md for party hosting bonuses.*
-*See ECONOMY_SYSTEM.md for furniture costs and lootbox drops.*
+*See [Fame_System.md](Fame_System.md) for party hosting bonuses.*
+*See [Economy_System.md](Economy_System.md) for furniture costs and lootbox drops.*
