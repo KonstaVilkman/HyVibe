@@ -30,7 +30,6 @@
 
 | NPC | Phase | Purpose |
 |-----|-------|---------|
-| Job Board | 0B | Display available jobs |
 | Bartender | 1 | Social flavor, maybe drink buffs |
 | Housing Agent | 1 | Apartment purchases/upgrades |
 | Event Host | 2 | Seasonal event guide |

@@ -25,7 +25,6 @@ Progression is about **giving players reasons to keep playing**. Every action sh
 |-------|------------------|-----------------|
 | **Player Level** | Overall account progress | Unlocks features, housing tiers |
 | **Fame** | Social status/activity | Hosting bonuses, titles |
-| **Job Levels** | Career progression | Better pay, skilled tiers |
 | **Collections** | Items gathered | Completion bonuses |
 | **Achievements** | Milestones completed | Gems, Lootboxes, cosmetics |
 
@@ -42,8 +41,6 @@ Progression is about **giving players reasons to keep playing**. Every action sh
 | Source | XP Amount | Notes |
 |--------|-----------|-------|
 | Time online (passive) | +5 XP/min | Always earning while online |
-| Job task (Entry) | +15 XP | Active work |
-| Job task (Skilled) | +25 XP | Better jobs = more XP |
 | Minigame played | +20-40 XP | Participation |
 | Minigame won | +50-80 XP | Skill reward |
 | Daily login | +200 XP | Show up bonus |
@@ -218,7 +215,6 @@ Players can boost their XP gain through equipment:
 | Category | Examples |
 |----------|----------|
 | **Progression** | Reach Level 10, 25, 50, 100 |
-| **Jobs** | Complete 100 deliveries, Max out a career |
 | **Social** | Host 10 parties, Get 100 apartment visits |
 | **Collection** | Own 50 furniture items, Complete a set |
 | **Exploration** | Visit all districts, Find hidden spots |
@@ -276,11 +272,11 @@ Reward at 100%: Golden Aquarium + "Master Angler" title + Epic Lootbox
 
 | Example Challenge | Reward |
 |-------------------|--------|
-| Complete 5 job tasks | $75, 5 Gems |
 | Win 2 minigames | $100, 10 Gems |
 | Visit 3 apartments | $50, 5 Fame |
 | Fish for 10 minutes | $75, 5 Gems |
 | Harvest a plant | $50, 5 Gems |
+| Socialize for 30 minutes | $75, 5 Gems |
 
 **Each Daily Challenge Completed:** 1 Common Lootbox
 **All 5 Dailies Completed:** Bonus 10 Gems
@@ -293,7 +289,6 @@ Larger goals with better rewards:
 |-------------------|--------|
 | Earn $5,000 Cash | $500, 25 Gems, Common Lootbox |
 | Host a party with 10+ guests | 50 Fame, Rare Lootbox |
-| Reach Job Level 5 in any career | Cosmetic unlock, Rare Lootbox |
 | Like 20 apartments | $200, 20 Fame, Common Lootbox |
 | Open 10 Lootboxes | 1 Rare Lootbox |
 | Win 10 minigames | $300, Epic Lootbox |
@@ -390,7 +385,7 @@ Login streaks reward **consistency over intensity**. Just show up each day to bu
 | "Why should I...?" | Incentive |
 |--------------------|-----------|
 | Keep playing? | Level unlocks, daily rewards, Lootboxes |
-| Do jobs? | Cash, XP, job levels, cosmetics |
+| Play minigames? | Cash, XP, lootboxes, leaderboard status |
 | Host parties? | Fame, passive income, status |
 | Decorate apartment? | Apartment value, visitors, flex |
 | Participate in events? | Exclusive items, event Lootboxes |
@@ -426,6 +421,5 @@ Login streaks reward **consistency over intensity**. Just show up each day to bu
 ---
 
 *See [Fame_System.md](Fame_System.md) for Fame progression.*
-*See [Jobs_System.md](Jobs_System.md) for career progression.*
 *See [Housing_System.md](Housing_System.md) for apartment progression.*
 *See [Economy_System.md](Economy_System.md) for Lootbox system details.*

@@ -32,7 +32,6 @@ The Shop NPC is the main vendor players interact with for everyday purchases. Lo
 | **Starter Furniture** | Basic chairs, tables, decor | $100-500 | Cash |
 | **Consumables** | Food, drinks (social items) | $20-100 | Cash |
 | **Lootboxes** | Common Lootbox only | $500 | Cash |
-| **Job Tools** | Basic efficiency items | $200-500 | Cash |
 
 ### Rotating Stock (Daily Reset)
 

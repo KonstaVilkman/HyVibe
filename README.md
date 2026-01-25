@@ -10,7 +10,7 @@ A social Hytale server focused on hanging out, housing, and collecting cool stuf
 |--------|--------------|
 | [Vision](Vision/_Overview.md) | Why we're building this |
 | [Development](Development/_Overview.md) | Roadmap and progress |
-| [Systems](Systems/_Overview.md) | Economy, Fame, Jobs, Housing |
+| [Systems](Systems/_Overview.md) | Economy, Fame, Housing, Progression |
 | [Items](Items/_Overview.md) | Cosmetics, Furniture, Pets, etc. |
 | [World](World/_Overview.md) | Locations and NPCs |
 

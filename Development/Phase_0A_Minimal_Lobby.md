@@ -53,7 +53,6 @@
 | Feature | Status | Solution |
 |---------|--------|----------|
 | Instanced Housing | No plugin exists | Custom Java plugin needed |
-| Job System | No plugin exists | Custom Java plugin needed |
 | Lootbox System | No plugin exists | Custom Java plugin needed |
 | XP/Leveling | No plugin exists | Custom Java plugin needed |
 | Fame System | No plugin exists | Custom Java plugin needed |
@@ -83,7 +82,6 @@ Given the 8-day-old ecosystem, we're simplifying Phase 0A to what's actually ach
 
 ### Deferred to Phase 0B
 - Instanced housing
-- Full job system
 - Lootboxes
 - Gem currency
 - Complex minigames

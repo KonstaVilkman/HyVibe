@@ -46,8 +46,6 @@ Fame measures how **known** and **active** a player is. It's not a currency — 
 | Hosting party (per guest per 5 min) | +1-3 | Core fame engine (scales with party tier, requires Crystals) |
 | Guest plays minigame at your party | +2 | Encourages fun parties |
 | Winning public minigame | +5 | Skill reward |
-| Job task completed | +1 | Standard jobs |
-| Entertainment job task | +2-3 | Social jobs give more |
 | Achievement unlocked | +10-50 | Milestone spikes |
 | Event participation | +10-30 | Engagement reward |
 

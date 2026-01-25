@@ -31,8 +31,8 @@
 |-------|------|----------|--------|
 | **0A** | Basic lobby with levels, fame, profiles | 2-3 months | **Current** |
 | **0B** | Add first activity, basic economy | 2-3 weeks | Planned |
-| **1** | Housing, job, full fame, lootboxes | 6-8 weeks | Planned |
-| **2** | Full jobs, minigames, housing tiers | 8-12 weeks | Planned |
+| **1** | Housing, full fame, lootboxes | 6-8 weeks | Planned |
+| **2** | More minigames, housing tiers | 8-12 weeks | Planned |
 | **3** | Onboarding, moderation, achievements | 4-6 weeks | Planned |
 | **4** | Live operations, events, growth | Ongoing | Future |
 

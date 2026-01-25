@@ -240,10 +240,10 @@ Pick ONE thing to add:
 **When you have 50-100 regular players, expand to:**
 
 - [ ] Housing (Studio apartments)
-- [ ] One full job (Delivery)
 - [ ] Full fame system
 - [ ] Basic lootboxes
 - [ ] More detailed profiles
+- [ ] Additional minigames
 
 ---
 

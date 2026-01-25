@@ -27,8 +27,6 @@ Everyday currency. Easy to earn, easy to spend. Keeps players engaged with basic
 
 | Source | Amount | Frequency |
 |--------|--------|-----------|
-| Entry job task | $10-15 | Per task |
-| Skilled job task | $25-40 | Per task |
 | Minigame win | $30-50 | Per win |
 | Minigame participation | $10-20 | Per game |
 | Daily login | $100 | Daily |
@@ -44,7 +42,6 @@ Everyday currency. Easy to earn, easy to spend. Keeps players engaged with basic
 | Basic cosmetics | $200-1,000 | Common outfits, furniture |
 | Apartment upgrades | $2,000-50,000 | See Housing System |
 | Food/drinks (social items) | $20-100 | Emotes, consumables |
-| Job tools | $200-500 | Efficiency items |
 | Basic lootboxes | $500 | Common tier |
 | Trading with players | Varies | Player economy |
 
@@ -283,12 +280,12 @@ Lootboxes contain items from these categories:
 |                        EARNING SOURCES                                |
 +----------------------------------------------------------------------+
 |                                                                       |
-|  +---------+  +---------+  +---------+  +---------+  +--------+      |
-|  |  JOBS   |  |MINIGAMES|  | LOGIN   |  | EVENTS  |  | PLANTS |      |
-|  |         |  |         |  | STREAK  |  |         |  |        |      |
-|  +----+----+  +----+----+  +----+----+  +----+----+  +---+----+      |
-|       |            |            |            |            |           |
-|       v            v            v            v            v           |
+|  +---------+  +---------+  +---------+  +--------+                   |
+|  |MINIGAMES|  | LOGIN   |  | EVENTS  |  | PLANTS |                   |
+|  |         |  | STREAK  |  |         |  |        |                   |
+|  +----+----+  +----+----+  +----+----+  +---+----+                   |
+|       |            |            |            |                        |
+|       v            v            v            v                        |
 |  +--------------------------------------------------------------------+
 |  |                    PLAYER INVENTORY                                |
 |  |  Cash: $$$        Gems: ***        Crystals: +++                  |
@@ -416,5 +413,4 @@ If monetization is enabled:
 ---
 
 *See [Fame_System.md](Fame_System.md) for Fame milestone rewards.*
-*See [Jobs_System.md](Jobs_System.md) for earning rates by job.*
 *See [Housing_System.md](Housing_System.md) for apartment costs.*

@@ -78,8 +78,7 @@ Casual, fun activities for spontaneous play.
 ### 5. Roleplay Systems
 Tools for players to craft identity and narrative.
 
-- **Jobs/Professions:** Barista, gardener, shopkeeper, DJ, tour guide
-- **Economy:** Server currency earned through jobs and activities
+- **Economy:** Server currency earned through minigames and activities
 - **Character Identity:** Bios, titles, custom name tags
 - **Roleplay Zones:** Designated areas for immersive RP
 - **Relationship Systems:** Friend lists, guild/group mechanics
@@ -112,7 +111,7 @@ Making the world feel alive and worth returning to.
 
 | Currency | How to Get | What It Buys |
 |----------|------------|--------------|
-| **Cash ($)** | Jobs, minigames, trading, daily login | Housing, basic cosmetics, parties |
+| **Cash ($)** | Minigames, trading, daily login | Housing, basic cosmetics, parties |
 | **Gems** | Level ups, achievements, daily login, purchase | Lootboxes, premium shop items |
 | **Crystals** | Lootbox drops only | Party hosting, housing features, premium shop |
 | **Lootboxes** | Earned (leveling, achievements) or bought with Gems | Cosmetics, furniture, pets, currency |
